@@ -4,21 +4,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sandra Sawdiatu Inusah | Geospatial Analyst, Conservationist and Remote Sensing Researcher">
-<title>Sandra Sawdiatu Inusah | Geospatial Portfolio</title>
+<meta name="description" content="Sandra Sawdiatu Inusah — Geospatial Analyst, Conservationist and Environmental Researcher">
+<title>Sandra Sawdiatu Inusah | Portfolio</title>
 
 <style>
 :root {
   --navy: #102a43;
-  --teal: #087f8c;
-  --teal-light: #dcefeb;
+  --dark: #071e3d;
+  --teal: #008b91;
+  --aqua: #23aaa8;
   --cream: #f7faf9;
+  --light: #e8f5f4;
   --text: #263d4b;
   --muted: #617783;
   --border: #dce6e5;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -29,22 +33,40 @@ body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   color: var(--text);
-  background: white;
+  background: #ffffff;
   line-height: 1.75;
 }
 
-a { color: var(--teal); text-decoration: none; }
-a:hover { text-decoration: underline; }
-img { max-width: 100%; display: block; }
+a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
 
 .container {
   width: min(1150px, 90%);
   margin: auto;
 }
 
-section { padding: 75px 0; }
-.light { background: var(--cream); }
-.center { text-align: center; }
+section {
+  padding: 75px 0;
+}
+
+.light {
+  background: var(--cream);
+}
+
+.center {
+  text-align: center;
+}
 
 h1, h2, h3, h4 {
   color: var(--navy);
@@ -56,8 +78,14 @@ h2 {
   margin: 5px 0 25px;
 }
 
-h3 { font-size: 1.2rem; margin-bottom: 8px; }
-p { margin-top: 0; }
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 0;
+}
 
 .eyebrow {
   color: var(--teal);
@@ -67,7 +95,9 @@ p { margin-top: 0; }
   text-transform: uppercase;
 }
 
-/* NAVIGATION */
+/* ==================================
+   NAVIGATION
+================================== */
 
 header {
   position: sticky;
@@ -92,7 +122,9 @@ nav {
   white-space: nowrap;
 }
 
-.logo span { color: var(--teal); }
+.logo span {
+  color: var(--teal);
+}
 
 .navlinks {
   display: flex;
@@ -106,7 +138,9 @@ nav {
   font-weight: 600;
 }
 
-.navlinks a:hover { color: var(--teal); }
+.navlinks a:hover {
+  color: var(--teal);
+}
 
 .menu {
   display: none;
@@ -116,7 +150,9 @@ nav {
   cursor: pointer;
 }
 
-/* HOMEPAGE HERO */
+/* ==================================
+   HERO SECTION
+================================== */
 
 .hero {
   position: relative;
@@ -129,9 +165,9 @@ nav {
   background-image:
     linear-gradient(
       90deg,
-      rgba(4,24,23,.78) 0%,
+      rgba(4,24,23,.80) 0%,
       rgba(4,24,23,.60) 50%,
-      rgba(4,24,23,.16) 100%
+      rgba(4,24,23,.18) 100%
     ),
     url("Portfolio/Background.jpg");
 
@@ -143,14 +179,16 @@ nav {
 .hero-inner {
   width: 100%;
   max-width: 1450px;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
   gap: 55px;
 }
 
-.hero-content { min-width: 0; }
+.hero-content {
+  min-width: 0;
+}
 
 .hero-eyebrow {
   color: #91f2e5;
@@ -284,7 +322,9 @@ nav {
   text-decoration: none;
 }
 
-.hero-socials a:hover { color: #91f2e5; }
+.hero-socials a:hover {
+  color: #91f2e5;
+}
 
 .hero-socials svg {
   width: 24px;
@@ -308,7 +348,123 @@ nav {
   box-shadow: 0 15px 45px rgba(0,0,0,.24);
 }
 
-/* CARDS */
+/* ==================================
+   NEW ABOUT ME SECTION
+================================== */
+
+#about {
+  background: #ffffff;
+  padding: 85px 0 90px;
+}
+
+.about-container {
+  width: min(1450px, 92%);
+  margin: 0 auto;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 36% 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 36px;
+  box-shadow: 0 14px 28px rgba(0,0,0,.14);
+}
+
+.about-kicker {
+  color: var(--teal);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.about-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--dark);
+  font-size: clamp(36px, 4vw, 60px);
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  margin: 0 0 12px;
+}
+
+.about-underline {
+  width: 230px;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    var(--teal),
+    #60c9c5
+  );
+  border-radius: 100%;
+  margin-bottom: 35px;
+}
+
+.about-copy p {
+  color: var(--dark);
+  font-size: clamp(16px, 1.35vw, 19px);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.about-copy strong {
+  color: #007b80;
+  font-weight: 800;
+}
+
+/* FOUR ABOUT ME THEMES */
+
+.about-pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  padding: 30px 22px;
+  background: #e8f6f5;
+  border-radius: 26px;
+}
+
+.about-pillar {
+  position: relative;
+  padding: 0 25px;
+}
+
+.about-pillar:not(:last-child) {
+  border-right: 1px solid #30aaa9;
+}
+
+.about-pillar svg {
+  width: 48px;
+  height: 48px;
+  color: var(--teal);
+  stroke-width: 1.8;
+  margin-bottom: 10px;
+}
+
+.about-pillar h3 {
+  color: var(--dark);
+  font-size: 19px;
+  line-height: 1.25;
+  margin: 0 0 7px;
+  font-weight: 800;
+}
+
+.about-pillar p {
+  color: var(--dark);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==================================
+   CARDS AND OTHER SECTIONS
+================================== */
 
 .grid {
   display: grid;
@@ -330,12 +486,14 @@ nav {
   box-shadow: 0 12px 28px #102a4315;
 }
 
-.card-body { padding: 25px; }
+.card-body {
+  padding: 25px;
+}
 
 .tag {
   display: inline-block;
   padding: 5px 10px;
-  background: var(--teal-light);
+  background: #dcefeb;
   color: #06616b;
   font-size: .76rem;
   font-weight: 700;
@@ -348,33 +506,6 @@ nav {
   border: 1px solid var(--border);
   border-radius: 14px;
 }
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 15px;
-  margin-top: 35px;
-}
-
-.stat {
-  padding: 22px 15px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.stat strong {
-  display: block;
-  font-size: 2rem;
-  color: var(--teal);
-}
-
-.stat span {
-  font-size: .85rem;
-  color: var(--muted);
-}
-
-/* EXPERIENCE */
 
 .timeline {
   border-left: 3px solid var(--teal);
@@ -405,21 +536,23 @@ nav {
   font-size: .88rem;
 }
 
-.job h3 { margin: 6px 0; }
-.job h4 { color: var(--muted); margin: 0 0 10px; }
+.job h3 {
+  margin: 6px 0;
+}
 
-/* PUBLICATIONS */
+.job h4 {
+  color: var(--muted);
+  margin: 0 0 10px;
+}
 
 .publication {
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
 }
 
-/* PHOTOGRAPHS */
-
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 30px;
 }
@@ -443,15 +576,18 @@ nav {
   font-weight: 600;
 }
 
-/* CONTACT */
-
 .contact {
   background: var(--navy);
   color: white;
 }
 
-.contact h2 { color: white; }
-.contact .eyebrow { color: #8ce0d8; }
+.contact h2 {
+  color: white;
+}
+
+.contact .eyebrow {
+  color: #8ce0d8;
+}
 
 .buttons {
   display: flex;
@@ -459,7 +595,9 @@ nav {
   gap: 15px;
 }
 
-.contact .buttons { justify-content: center; }
+.contact .buttons {
+  justify-content: center;
+}
 
 .btn {
   display: inline-block;
@@ -475,13 +613,8 @@ nav {
 }
 
 .btn.outline {
-  border: 2px solid var(--teal);
-  color: var(--teal);
-}
-
-.contact .outline {
+  border: 2px solid white;
   color: white;
-  border-color: white;
 }
 
 footer {
@@ -496,12 +629,38 @@ footer {
   gap: 15px;
 }
 
-footer a { color: #8ce0d8; }
+footer a {
+  color: #8ce0d8;
+}
 
-/* RESPONSIVE DESIGN */
+/* ==================================
+   RESPONSIVE DESIGN
+================================== */
+
+@media(max-width:1100px) {
+  .about-layout {
+    grid-template-columns: 40% 1fr;
+    gap: 35px;
+  }
+
+  .about-image {
+    height: 520px;
+  }
+
+  .about-pillars {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .about-pillar:nth-child(2) {
+    border-right: none;
+  }
+}
 
 @media(max-width:900px) {
-  .menu { display: block; }
+  .menu {
+    display: block;
+  }
 
   .navlinks {
     display: none;
@@ -515,7 +674,9 @@ footer a { color: #8ce0d8; }
     flex-direction: column;
   }
 
-  .navlinks.open { display: flex; }
+  .navlinks.open {
+    display: flex;
+  }
 
   .hero {
     padding: 60px 6%;
@@ -535,36 +696,93 @@ footer a { color: #8ce0d8; }
     height: 420px;
   }
 
-  .stats { grid-template-columns: repeat(2,1fr); }
-  .gallery { grid-template-columns: repeat(2,1fr); }
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 550px;
+    height: 500px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media(max-width:600px) {
-  section { padding: 55px 0; }
+  section {
+    padding: 55px 0;
+  }
 
   .hero {
     padding: 55px 5%;
-    background-position: center;
   }
 
-  .hero h1 { font-size: 34px; }
-  .hero-description { font-size: 16px; }
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
 
   .hero-photo img {
     max-width: 100%;
     height: 380px;
   }
 
-  .hero-socials { gap: 16px; }
-  .grid, .gallery { grid-template-columns: 1fr; }
-  .footer-row { flex-direction: column; }
+  .hero-socials {
+    gap: 16px;
+  }
+
+  #about {
+    padding: 55px 0;
+  }
+
+  .about-image {
+    height: 420px;
+    border-radius: 22px;
+  }
+
+  .about-heading {
+    font-size: 38px;
+  }
+
+  .about-pillars {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .about-pillar {
+    padding: 0 0 20px;
+    border-right: none !important;
+    border-bottom: 1px solid #9bd8d5;
+  }
+
+  .about-pillar:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .grid,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-row {
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 
 <body id="top">
 
-<!-- NAVIGATION -->
+<!-- ==================================
+     NAVIGATION
+================================== -->
 
 <header>
 <nav class="container">
@@ -573,7 +791,8 @@ footer a { color: #8ce0d8; }
     Sandra S. Inusah<span>.</span>
   </a>
 
-  <button class="menu"
+  <button
+    class="menu"
     aria-label="Toggle menu"
     aria-expanded="false"
     onclick="toggleMenu(this)">
@@ -599,7 +818,9 @@ footer a { color: #8ce0d8; }
 
 <main>
 
-<!-- HOMEPAGE -->
+<!-- ==================================
+     HOMEPAGE
+================================== -->
 
 <section class="hero" id="home">
 <div class="hero-inner">
@@ -617,7 +838,9 @@ footer a { color: #8ce0d8; }
     </div>
 
     <p class="hero-description">
-      Exploring landscapes through geospatial science to uncover patterns of environmental change and support informed conservation decisions.
+      I use geospatial technology to understand how landscapes
+      are changing and how these changes affect the
+      environment and wildlife.
     </p>
 
     <div class="hero-availability">
@@ -670,15 +893,16 @@ footer a { color: #8ce0d8; }
         LinkedIn
       </a>
 
-      
-    <a href="https://scholar.google.ca/citations?user=WnDXRssAAAAJ&amp;hl=en"
-       target="_blank"
-       rel="noopener noreferrer">
-       <i data-lucide="graduation-cap"></i>
-       Google Scholar
-    </a>
+      <a
+        href="https://scholar.google.ca/citations?user=WnDXRssAAAAJ&amp;hl=en"
+        target="_blank"
+        rel="noopener noreferrer">
+        <i data-lucide="graduation-cap"></i>
+        Google Scholar
+      </a>
 
-      <a href="https://github.com/andra4889"
+      <a
+        href="https://github.com/andra4889"
         target="_blank"
         rel="noopener noreferrer">
         <i data-lucide="github"></i>
@@ -703,83 +927,161 @@ footer a { color: #8ce0d8; }
 </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ==================================
+     ABOUT ME — NEW DESIGN
+================================== -->
 
 <section id="about">
-<div class="container">
 
-  <p class="eyebrow">ABOUT ME</p>
+<div class="about-container">
 
-  <h2>
-    Researcher. Geospatial Analyst.
-    Environmental Scientist.
-  </h2>
+  <div class="about-layout">
 
-  <p>
-    I am a graduate geospatial researcher with over four years
-    of experience in remote sensing, GIS, machine learning,
-    and environmental data analysis.
-  </p>
+    <!-- YOUR ACTUAL TORTOISE PHOTOGRAPH -->
 
-  <p>
-    I am currently pursuing an MSc in Geography at the
-    University of British Columbia, where I investigate
-    land-use and land-cover transitions, vegetation dynamics,
-    and structural changes in Ghana's forest–savanna
-    transition zone.
-  </p>
-
-  <p>
-    My research combines satellite imagery, UAV data,
-    GEDI LiDAR, vegetation field surveys, and geospatial
-    machine learning. I use Python, R, Google Earth Engine,
-    and GIS technologies to develop reproducible workflows
-    and generate information for environmental research
-    and decision-making.
-  </p>
-
-  <p>
-    Beyond academic research, I have contributed to projects
-    in climate-smart agriculture, conservation, carbon-stock
-    mapping, landscape ecology, and community-based
-    climate adaptation.
-  </p>
-
-  <div class="stats">
-
-    <div class="stat">
-      <strong>4</strong>
-      <span>Peer-reviewed articles</span>
+    <div>
+      <img
+        class="about-image"
+        src="Portfolio/Woman Holding a Tortoise Outdoors.png"
+        alt="Sandra holding a tortoise outdoors"
+        loading="lazy">
     </div>
 
-    <div class="stat">
-      <strong>91</strong>
-      <span>Vegetation plots surveyed</span>
+    <!-- ABOUT ME STORY -->
+
+    <div class="about-copy">
+
+      <div class="about-kicker">
+        ABOUT ME ─────
+      </div>
+
+      <h2 class="about-heading">
+        Beyond Maps: My Story
+      </h2>
+
+      <div class="about-underline"></div>
+
+      <p>
+        I'm Sandra — a geospatial scientist, nature enthusiast,
+        and problem-solver passionate about people,
+        landscapes, and wildlife.
+      </p>
+
+      <p>
+        Growing up in Ghana, the forests, savannas,
+        and incredible wildlife around me sparked a lasting
+        curiosity about how human activities reshape
+        natural environments.
+
+        Today, my work is driven by a simple question:
+
+        <strong>
+          how and why are landscapes changing,
+          and what do these changes mean for
+          ecosystems and wildlife?
+        </strong>
+      </p>
+
+      <p>
+        I use geospatial data and field insights
+        to explore these questions and generate
+        knowledge that supports conservation,
+        sustainable land use, and climate resilience.
+      </p>
+
+      <p>
+        Beyond research, I enjoy teaching, mentoring,
+        collaborating across disciplines, and finding
+        creative ways to turn data and maps into
+        real-world impact.
+      </p>
+
     </div>
 
-    <div class="stat">
-      <strong>4+</strong>
-      <span>Years of experience</span>
+  </div>
+
+  <!-- FOUR THEMES -->
+
+  <div class="about-pillars">
+
+    <!-- LANDSCAPE CHANGE -->
+
+    <div class="about-pillar">
+
+      <i data-lucide="trees"></i>
+
+      <h3>Landscape Change</h3>
+
+      <p>
+        Understanding drivers and patterns
+      </p>
+
     </div>
 
-    <div class="stat">
-      <strong>2026</strong>
-      <span>Fieldwork grant</span>
+    <!-- BIODIVERSITY CONSERVATION -->
+
+    <div class="about-pillar">
+
+      <i data-lucide="paw-print"></i>
+
+      <h3>Biodiversity Conservation</h3>
+
+      <p>
+        Assessing how landscape change
+        affects biodiversity
+      </p>
+
+    </div>
+
+    <!-- ECOSYSTEM HEALTH -->
+
+    <div class="about-pillar">
+
+      <i data-lucide="leaf"></i>
+
+      <h3>Ecosystem Health</h3>
+
+      <p>
+        Exploring impacts on biodiversity
+        and ecosystem functioning
+      </p>
+
+    </div>
+
+    <!-- PEOPLE AND CONSERVATION -->
+
+    <div class="about-pillar">
+
+      <i data-lucide="users-round"></i>
+
+      <h3>People &amp; Conservation</h3>
+
+      <p>
+        Informing solutions for ecosystems
+        and communities
+      </p>
+
     </div>
 
   </div>
 
 </div>
+
 </section>
 
-<!-- CURRENT RESEARCH -->
+<!-- ==================================
+     CURRENT RESEARCH
+================================== -->
 
 <section id="research" class="light">
+
 <div class="container">
 
   <p class="eyebrow">CURRENT RESEARCH</p>
 
-  <h2>MSc Research · University of British Columbia</h2>
+  <h2>
+    MSc Research · University of British Columbia
+  </h2>
 
   <div class="feature">
 
@@ -799,12 +1101,14 @@ footer a { color: #8ce0d8; }
       Kogyae Strict Nature Reserve, Ghana.
     </p>
 
-    <p>The research focuses on three main areas:</p>
+    <p>
+      The research focuses on three main areas:
+    </p>
 
     <ul>
       <li>
-        Mapping historical land-use and land-cover change
-        using Landsat imagery.
+        Mapping historical land-use and land-cover
+        change using Landsat imagery.
       </li>
 
       <li>
@@ -813,8 +1117,8 @@ footer a { color: #8ce0d8; }
       </li>
 
       <li>
-        Investigating structural homogenization and divergence
-        between forest and savanna ecosystems.
+        Investigating structural homogenization and
+        divergence between forest and savanna ecosystems.
       </li>
     </ul>
 
@@ -841,12 +1145,16 @@ footer a { color: #8ce0d8; }
 </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- ==================================
+     PROJECTS
+================================== -->
 
 <section id="projects">
+
 <div class="container">
 
   <p class="eyebrow">RESEARCH & APPLIED WORK</p>
+
   <h2>Selected Geospatial Projects</h2>
 
   <p>
@@ -859,241 +1167,304 @@ footer a { color: #8ce0d8; }
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">2025–Present · MSc Research</span>
+
         <h3>Forest–Savanna Landscape Dynamics</h3>
+
         <p>
           Historical land-cover classification and vegetation
           change analysis in Ghana using Landsat,
           Random Forest, vegetation indices, and LandTrendr.
         </p>
+
         <p>
           <strong>Methods:</strong>
           Satellite time series, machine learning, GIS.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">2026 · UAV & Field Research</span>
+
         <h3>Tree-Cover Mapping and Vegetation Structure</h3>
+
         <p>
           Integrating UAV imagery, field measurements,
           and satellite observations to estimate continuous
           tree cover across heterogeneous forest–savanna
           landscapes.
         </p>
+
         <p>
           <strong>Methods:</strong>
           UAV photogrammetry, regression, GEDI, Landsat.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">Geospatial AI</span>
+
         <h3>Earth Observation Foundation Models</h3>
+
         <p>
           Exploring Prithvi embeddings and Google Satellite
           Embeddings to support historical land-cover
           reconstruction and vegetation classification.
         </p>
+
         <p>
           <strong>Tools:</strong>
           Python, PyTorch, TerraTorch, PCA.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">2023–2024 · Alliance / CIAT</span>
+
         <h3>Climate-Smart Agriculture Investment Mapping</h3>
+
         <p>
           Geospatial analysis supporting climate-smart
           agriculture investment prioritization,
           impact-area mapping, mitigation feasibility,
           and policy decision-making in Ghana.
         </p>
+
         <p>
           <strong>Tools:</strong>
           GIS, spatial analysis, dashboards, reporting.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">2022–2023 · Conservation</span>
+
         <h3>Ankasa and Bia Forest Habitat Research</h3>
+
         <p>
           Investigating the effects of agriculture
           and logging on forest habitat structure
           and landscape change in Ghana's conservation areas.
         </p>
+
         <p>
           <strong>Focus:</strong>
           Landscape ecology, forest conservation.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">2022–2023 · Agricultural Land Use</span>
+
         <h3>Food Cropland to Rubber Conversion</h3>
+
         <p>
           Research on agricultural land-use transitions
           in Ghana's Ellembelle District and their
           implications for local food self-sufficiency.
         </p>
+
         <p>
           <strong>Focus:</strong>
           Land-use change, livelihoods, agriculture.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">2022–2023 · Gold Fields Ghana</span>
+
         <h3>Carbon Stock and Environmental Mapping</h3>
+
         <p>
           Geospatial assessment of aboveground and soil
           carbon stocks using satellite imagery,
           GPS observations, and environmental datasets.
         </p>
+
         <p>
           <strong>Tools:</strong>
           GIS, remote sensing, field data.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">Field Validation</span>
+
         <h3>National Land-Cover Map Validation</h3>
+
         <p>
           Collection of GPS reference observations
           to support validation of national land-cover
           and protected-area mapping products in Ghana.
         </p>
+
         <p>
           <strong>Methods:</strong>
           GNSS, field surveys, GIS.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
-        <span class="tag">2022 · Community Research</span>
+
+        <span class="tag">Community Research</span>
+
         <h3>Gender-Responsive Nature-Based Solutions</h3>
+
         <p>
           Supporting community surveys and focus group
           discussions examining nature-based solutions,
           climate adaptation, and local livelihoods.
         </p>
+
         <p>
           <strong>Methods:</strong>
           Field surveys, stakeholder engagement.
         </p>
+
       </div>
     </article>
 
     <article class="card">
       <div class="card-body">
+
         <span class="tag">2021–2022 · CERGIS</span>
+
         <h3>Densu Catchment Land-Cover Mapping</h3>
+
         <p>
           Satellite-based land-cover mapping in Ghana's
           Densu catchment using Landsat imagery
           and geospatial processing workflows.
         </p>
+
         <p>
           <strong>Tools:</strong>
           Google Earth Engine, QGIS, ArcMap.
         </p>
+
       </div>
     </article>
 
   </div>
 
-  <p style="margin-top:25px;color:var(--muted)">
-    Detailed project maps, figures, and technical documentation
-    will be added as they become available.
-  </p>
-
 </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- ==================================
+     EXPERIENCE
+================================== -->
 
 <section id="experience" class="light">
+
 <div class="container">
 
   <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+
   <h2>Work & Research Experience</h2>
 
   <div class="timeline">
 
     <div class="job">
+
       <span class="date">2025–Present</span>
+
       <h3>Graduate Research Assistant</h3>
-      <h4>University of British Columbia · Vancouver, Canada</h4>
+
+      <h4>
+        University of British Columbia · Vancouver, Canada
+      </h4>
+
       <p>
         Conduct remote sensing and geospatial machine-learning
         research on vegetation dynamics, land-cover change,
         and landscape structure in Ghana.
       </p>
+
     </div>
 
     <div class="job">
-      <span class="date">Aug 2023–Dec 2024</span>
+
+      <span class="date">2023–2024</span>
+
       <h3>Geospatial Analyst</h3>
-      <h4>Alliance of Bioversity International and CIAT · Ghana</h4>
+
+      <h4>
+        Alliance of Bioversity International and CIAT · Ghana
+      </h4>
+
       <p>
         Supported climate-smart agriculture research,
         geospatial investment planning, environmental policy
         analysis, GIS dashboards, and scientific reporting.
       </p>
+
     </div>
 
     <div class="job">
+
       <span class="date">Oct 2022–Oct 2023</span>
+
       <h3>Research Assistant</h3>
-      <h4>Kwame Nkrumah University of Science and Technology · Ghana</h4>
+
+      <h4>
+        Kwame Nkrumah University of Science
+        and Technology · Ghana
+      </h4>
+
       <p>
         Conducted research on land-cover change,
         biodiversity conservation, forest habitat structure,
         carbon stocks, and protected-area management.
       </p>
+
     </div>
 
     <div class="job">
+
       <span class="date">Oct 2022–Apr 2023</span>
-      <h3>Remote Sensing and GIS Technician Assistant</h3>
+
+      <h3>Geospatial / Environmental Analyst</h3>
+
       <h4>Gold Fields Ghana</h4>
+
       <p>
         Supported land-cover classification,
         satellite imagery processing, GPS surveys,
         carbon-stock mapping, and environmental reporting.
       </p>
-    </div>
 
-    <div class="job">
-      <span class="date">2021–2023</span>
-      <h3>Additional Field Research & Mapping Roles</h3>
-      <h4>
-        Ghana Forestry Commission · IUCN / A Rocha Ghana · CERGIS
-      </h4>
-      <p>
-        Supported national land-cover validation,
-        community-based environmental research,
-        climate adaptation surveys, and catchment mapping.
-      </p>
     </div>
 
   </div>
@@ -1101,41 +1472,60 @@ footer a { color: #8ce0d8; }
 </div>
 </section>
 
-<!-- EDUCATION -->
+<!-- ==================================
+     EDUCATION
+================================== -->
 
 <section id="education">
+
 <div class="container">
 
   <p class="eyebrow">ACADEMIC BACKGROUND</p>
+
   <h2>Education</h2>
 
   <div class="grid">
 
     <div class="feature">
+
       <span class="date">2025–2027 (Expected)</span>
+
       <h3>Master of Science in Geography</h3>
+
       <p>
         <strong>University of British Columbia</strong><br>
         Vancouver, Canada
       </p>
+
       <p>
         Research focus: Remote sensing, vegetation dynamics,
         land-cover change, geospatial AI, and landscape ecology.
       </p>
+
     </div>
 
     <div class="feature">
+
       <span class="date">2018–2022</span>
+
       <h3>BSc Natural Resources Management</h3>
+
       <p>
-        <strong>KNUST</strong><br>
+        <strong>
+          Kwame Nkrumah University of Science and Technology
+        </strong><br>
         Kumasi, Ghana
       </p>
-      <p>First Class Honours · Wildlife and Range Management.</p>
+
       <p>
-        Undergraduate thesis: Spatio-temporal analysis of
-        landscape structure in the Ankasa Conservation Area.
+        First Class Honours · Wildlife and Range Management.
       </p>
+
+      <p>
+        Undergraduate thesis: Spatio-temporal analysis
+        of landscape structure in the Ankasa Conservation Area.
+      </p>
+
     </div>
 
   </div>
@@ -1143,19 +1533,27 @@ footer a { color: #8ce0d8; }
 </div>
 </section>
 
-<!-- TEACHING -->
+<!-- ==================================
+     TEACHING
+================================== -->
 
 <section id="teaching" class="light">
+
 <div class="container">
 
   <p class="eyebrow">TEACHING & MENTORSHIP</p>
+
   <h2>Teaching Experience</h2>
 
   <div class="feature">
 
     <span class="date">2024–Present</span>
+
     <h3>Graduate Teaching Assistant</h3>
-    <p><strong>University of British Columbia</strong></p>
+
+    <p>
+      <strong>University of British Columbia</strong>
+    </p>
 
     <p>
       Support undergraduate teaching in GIS, remote sensing,
@@ -1181,6 +1579,7 @@ footer a { color: #8ce0d8; }
   <div class="feature" style="margin-top:20px">
 
     <span class="date">2022–2023</span>
+
     <h3>University Teaching Assistant</h3>
 
     <p>
@@ -1201,19 +1600,25 @@ footer a { color: #8ce0d8; }
 </div>
 </section>
 
-<!-- AWARDS -->
+<!-- ==================================
+     AWARDS
+================================== -->
 
 <section id="awards">
+
 <div class="container">
 
   <p class="eyebrow">RECOGNITION</p>
+
   <h2>Grants & Awards</h2>
 
   <div class="feature">
 
     <span class="date">2026</span>
 
-    <h3>Society for Tropical Ecology Field Work Grant</h3>
+    <h3>
+      Society for Tropical Ecology Field Work Grant
+    </h3>
 
     <p>
       Research funding supporting vegetation fieldwork
@@ -1225,16 +1630,22 @@ footer a { color: #8ce0d8; }
 </div>
 </section>
 
-<!-- PUBLICATIONS -->
+<!-- ==================================
+     PUBLICATIONS
+================================== -->
 
 <section id="publications" class="light">
+
 <div class="container">
 
   <p class="eyebrow">SCIENTIFIC CONTRIBUTIONS</p>
+
   <h2>Publications & Research Outputs</h2>
 
   <div class="publication">
+
     <span class="date">2025 · Peer-reviewed article</span>
+
     <p>
       Dziwornu, M. G., Mponela, P.,
       <strong>Inusah, S. S.</strong>, et al.
@@ -1242,10 +1653,13 @@ footer a { color: #8ce0d8; }
       of climate-smart agriculture initiatives in Ghana.
       <em>Climate Smart Agriculture, 2</em>(1), 100038.
     </p>
+
   </div>
 
   <div class="publication">
+
     <span class="date">2024 · Peer-reviewed article</span>
+
     <p>
       Ashiagbor, G., Abubakar, S. K.,
       <strong>Inusah, S. S.</strong>, et al.
@@ -1254,10 +1668,13 @@ footer a { color: #8ce0d8; }
       conservation areas of Ghana.
       <em>Ecology and Evolution, 14</em>(12), e70712.
     </p>
+
   </div>
 
   <div class="publication">
+
     <span class="date">2024 · Peer-reviewed article</span>
+
     <p>
       Ashiagbor, G., Quarshie, V.,
       <strong>Inusah, S. S.</strong>, et al.
@@ -1266,10 +1683,13 @@ footer a { color: #8ce0d8; }
       food self-sufficiency.
       <em>Scientific African, 26</em>, e02433.
     </p>
+
   </div>
 
   <div class="publication">
+
     <span class="date">2024 · Peer-reviewed article</span>
+
     <p>
       Laryea, B., Asiamah, K., Araphat, A., et al.,
       &amp; <strong>Inusah, S.</strong>
@@ -1280,38 +1700,49 @@ footer a { color: #8ce0d8; }
         Journal of Applied Science and Information Technology, 1
       </em>(1).
     </p>
+
   </div>
 
   <h3>Reports & Datasets</h3>
 
   <ul>
+
     <li>
-      <a href="https://hdl.handle.net/10568/159971"
-         target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://hdl.handle.net/10568/159971"
+        target="_blank"
+        rel="noopener noreferrer">
         Ghana Scaling Week Report (2024)
       </a>
     </li>
 
     <li>
-      <a href="https://hdl.handle.net/10568/138047"
-         target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://hdl.handle.net/10568/138047"
+        target="_blank"
+        rel="noopener noreferrer">
         Climate-Smart Agriculture Resource Investment Dataset
       </a>
     </li>
 
     <li>
-      <a href="https://hdl.handle.net/10568/136902"
-         target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://hdl.handle.net/10568/136902"
+        target="_blank"
+        rel="noopener noreferrer">
         Optimising Climate-Smart Agriculture Resource Investment Decisions
       </a>
     </li>
 
     <li>
-      <a href="https://hdl.handle.net/10568/136906"
-         target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://hdl.handle.net/10568/136906"
+        target="_blank"
+        rel="noopener noreferrer">
         Climate-Smart Agriculture Implementation Evidence in Ghana
       </a>
     </li>
+
   </ul>
 
   <h3>Conference Presentation</h3>
@@ -1319,76 +1750,101 @@ footer a { color: #8ce0d8; }
   <p>
     <strong>
       AGU Annual Meeting 2026 — Accepted Oral Presentation
-    </strong><br>
+    </strong>
+  </p>
 
-    Spatiotemporal Analysis of Vegetation Dynamics in Ghana's
-    Forest–Savanna Transition Zone Using Multi-Source Remote Sensing.
+  <p>
+    Spatiotemporal Analysis of Vegetation Dynamics
+    in Ghana's Forest–Savanna Transition Zone
+    Using Multi-Source Remote Sensing.
   </p>
 
 </div>
 </section>
 
-<!-- SKILLS -->
+<!-- ==================================
+     SKILLS
+================================== -->
 
 <section id="skills">
+
 <div class="container">
 
   <p class="eyebrow">TECHNICAL EXPERTISE</p>
+
   <h2>Skills & Technologies</h2>
 
   <div class="grid">
 
     <div class="feature">
+
       <h3>Programming & Data Analysis</h3>
+
       <p>
         Python, R, JavaScript, Google Earth Engine,
         geospatial data processing, statistical analysis.
       </p>
+
     </div>
 
     <div class="feature">
+
       <h3>Machine Learning & GeoAI</h3>
+
       <p>
         Random Forest, PyTorch, TerraTorch, Prithvi,
         Google Satellite Embeddings, PCA, classification,
         regression, and model validation.
       </p>
+
     </div>
 
     <div class="feature">
+
       <h3>Earth Observation</h3>
+
       <p>
         Landsat, Sentinel-2, HLS, GEDI LiDAR,
         UAV imagery, NDVI, EVI, NDMI, NBR,
         LandTrendr, and seasonal phenology.
       </p>
+
     </div>
 
     <div class="feature">
+
       <h3>GIS & Mapping</h3>
+
       <p>
         ArcGIS Pro, ArcGIS Online, QGIS, ArcMap,
         Google Earth Engine, SNAP, FRAGSTATS,
         Agisoft Metashape, and web mapping.
       </p>
+
     </div>
 
     <div class="feature">
+
       <h3>Field Research</h3>
+
       <p>
         Vegetation plot surveys, canopy measurements,
         GPS/GNSS data collection, UAV operations,
         ecological sampling, and community surveys.
       </p>
+
     </div>
 
     <div class="feature">
+
       <h3>Scientific Communication</h3>
+
       <p>
         Scientific writing, technical reports,
         publications, grant writing, presentations,
         GIS teaching, and stakeholder engagement.
       </p>
+
     </div>
 
   </div>
@@ -1396,12 +1852,16 @@ footer a { color: #8ce0d8; }
 </div>
 </section>
 
-<!-- PHOTOGRAPHS -->
+<!-- ==================================
+     GALLERY
+================================== -->
 
 <section id="gallery" class="light">
+
 <div class="container">
 
   <p class="eyebrow">BEYOND THE DATA</p>
+
   <h2>Fieldwork, Research & Life</h2>
 
   <p>
@@ -1413,46 +1873,59 @@ footer a { color: #8ce0d8; }
   <div class="gallery">
 
     <figure>
+
       <img
         src="Portfolio/IMG_2793_Original.jpg"
         alt="Portfolio fieldwork photograph"
         loading="lazy">
-      <figcaption>Fieldwork and research</figcaption>
+
+      <figcaption>
+        Fieldwork and research
+      </figcaption>
+
     </figure>
 
     <figure>
+
       <img
         src="Portfolio/IMG_3551_Original.jpg"
         alt="Portfolio research photograph"
         loading="lazy">
-      <figcaption>Research and professional experiences</figcaption>
+
+      <figcaption>
+        Research and professional experiences
+      </figcaption>
+
     </figure>
 
     <figure>
+
       <img
-        src="Portfolio/Sandra Inusah (2025).jpg"
-        alt="Sandra Inusah"
+        src="Portfolio/Smiling Portrait Among Greenery.png"
+        alt="Sandra Inusah outdoors"
         loading="lazy">
-      <figcaption>My journey in geospatial research</figcaption>
+
+      <figcaption>
+        My journey in geospatial research
+      </figcaption>
+
     </figure>
 
   </div>
 
-  <p style="margin-top:25px;color:var(--muted)">
-    Additional wildlife, drone, undergraduate fieldwork,
-    and community engagement photographs will be added
-    after their filenames are confirmed.
-  </p>
-
 </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ==================================
+     CONTACT
+================================== -->
 
 <section id="contact" class="contact">
+
 <div class="container center">
 
   <p class="eyebrow">LET'S CONNECT</p>
+
   <h2>Get in Touch</h2>
 
   <p>
@@ -1461,7 +1934,9 @@ footer a { color: #8ce0d8; }
     and doctoral research.
   </p>
 
-  <p>Vancouver, British Columbia, Canada</p>
+  <p>
+    Vancouver, British Columbia, Canada
+  </p>
 
   <div class="buttons">
 
@@ -1486,46 +1961,66 @@ footer a { color: #8ce0d8; }
 
 </main>
 
-<!-- FOOTER -->
+<!-- ==================================
+     FOOTER
+================================== -->
 
 <footer>
+
 <div class="container footer-row">
 
   <span>
     © 2026 Sandra Sawdiatu Inusah · Vancouver, Canada
   </span>
 
-  <a href="#top">Back to Top ↑</a>
+  <a href="#top">
+    Back to Top ↑
+  </a>
 
 </div>
+
 </footer>
 
-<!-- ICON LIBRARY -->
+<!-- ==================================
+     LUCIDE ICON LIBRARY
+================================== -->
 
 <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
 
-<!-- WEBSITE JAVASCRIPT -->
+<!-- ==================================
+     JAVASCRIPT
+================================== -->
 
 <script>
+
 function toggleMenu(button) {
+
   const links = document.getElementById("navlinks");
+
   const open = links.classList.toggle("open");
 
   button.setAttribute("aria-expanded", String(open));
+
 }
 
 document.querySelectorAll(".navlinks a").forEach(link => {
+
   link.addEventListener("click", () => {
+
     document.getElementById("navlinks").classList.remove("open");
 
     const button = document.querySelector(".menu");
+
     button.setAttribute("aria-expanded", "false");
+
   });
+
 });
 
 if (typeof lucide !== "undefined") {
   lucide.createIcons();
 }
+
 </script>
 
 </body>
