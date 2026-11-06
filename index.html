@@ -775,6 +775,140 @@ footer a {
     flex-direction: column;
   }
 }
+
+/* ==================================
+   CURRENT RESEARCH PREVIEW ONLY
+================================== */
+
+#research {
+  background: #f4f8f8;
+}
+
+#research .container {
+  width: min(1450px, 90%);
+}
+
+#research h2 {
+  font-size: clamp(30px, 4vw, 56px);
+  margin: 14px 0 32px;
+  color: #102a43;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.research-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  background: #ffffff;
+  border: 1px solid #dce6e5;
+  border-radius: 28px;
+  padding: 34px 50px;
+  box-shadow: 0 15px 35px rgba(16,42,67,.035);
+}
+
+.research-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-map img {
+  display: block;
+  width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.research-content {
+  min-width: 0;
+}
+
+.research-label {
+  display: inline-block;
+  background: #e0f2ef;
+  color: #066b77;
+  padding: 10px 15px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.research-content h3 {
+  color: #102a43;
+  font-size: clamp(26px, 2.8vw, 38px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.research-content p {
+  color: #263d4b;
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.research-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: #008b91;
+  color: #ffffff;
+  padding: 15px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+
+.research-button:hover {
+  background: #006e75;
+  color: white;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.research-button span {
+  font-size: 27px;
+  line-height: 1;
+}
+
+@media (max-width: 850px) {
+  .research-preview {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .research-map img {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  #research .container {
+    width: 90%;
+  }
+
+  .research-preview {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .research-content p {
+    font-size: 16px;
+  }
+
+  .research-button {
+    font-size: 16px;
+  }
+}
+  
 </style>
 </head>
 
