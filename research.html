@@ -7,14 +7,11 @@
 
 <title>Current Research | Sandra Sawdiatu Inusah</title>
 
-<meta name="description"
-content="MSc research on landscape change and vegetation dynamics in Ghana's forest-savanna transition zone.">
+<meta name="description" content="Research on landscape change and vegetation dynamics in Ghana's forest-savanna transition zone.">
 
 <style>
 
-/* ===============================
-   GENERAL PAGE STYLING
-================================ */
+/* GENERAL */
 
 * {
   box-sizing: border-box;
@@ -30,10 +27,6 @@ body {
   background: #f7faf9;
   color: #102a43;
 }
-
-/* ===============================
-   BACK TO PORTFOLIO
-================================ */
 
 .research-topbar {
   background: white;
@@ -52,21 +45,18 @@ body {
   text-decoration: underline;
 }
 
-/* ===============================
-   CURRENT RESEARCH
-================================ */
+/* CURRENT RESEARCH */
 
 #research {
-  --research-navy: #102a43;
-  --research-teal: #087f8c;
-  --research-green: #176c4d;
-  --research-muted: #52677a;
-  --research-line: #dce8e8;
-  --research-bg: #f7faf9;
+  --navy: #102a43;
+  --teal: #087f8c;
+  --green: #176c4d;
+  --muted: #52677a;
+  --line: #dce8e8;
 
-  padding: 75px 0 95px;
-  background: var(--research-bg);
-  color: var(--research-navy);
+  padding: 65px 0 95px;
+  background: #f7faf9;
+  color: var(--navy);
 }
 
 #research .research-container {
@@ -75,7 +65,7 @@ body {
 }
 
 #research .research-eyebrow {
-  color: var(--research-teal);
+  color: var(--teal);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -89,20 +79,18 @@ body {
   letter-spacing: -1.5px;
   max-width: 1050px;
   margin: 0 0 20px;
-  color: var(--research-navy);
+  color: var(--navy);
 }
 
 #research h3 {
   font-size: clamp(23px, 2.5vw, 31px);
   line-height: 1.25;
   margin: 0 0 14px;
-  color: var(--research-navy);
 }
 
 #research h4 {
   font-size: 18px;
   margin: 0 0 10px;
-  color: var(--research-navy);
 }
 
 #research p {
@@ -112,7 +100,7 @@ body {
 }
 
 #research .research-subtitle {
-  color: var(--research-muted);
+  color: var(--muted);
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -125,12 +113,63 @@ body {
 }
 
 #research .research-lead strong {
-  color: var(--research-green);
+  color: var(--green);
 }
 
-/* ===============================
-   RESEARCH TAGS
-================================ */
+/* VIDEO BACKGROUND HERO */
+
+#research .research-video-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: clamp(380px, 48vw, 580px);
+  overflow: hidden;
+  border-radius: 22px;
+  background: linear-gradient(120deg, #102a43, #176c4d);
+  margin-bottom: 30px;
+}
+
+#research .research-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+  pointer-events: none;
+}
+
+#research .research-video-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5,21,34,.83),
+    rgba(5,21,34,.48)
+  );
+  z-index: -1;
+}
+
+#research .research-video-hero-content {
+  position: relative;
+  padding: clamp(30px, 5vw, 70px);
+  max-width: 1050px;
+}
+
+#research .research-video-hero .research-eyebrow {
+  color: #9ce8e2;
+}
+
+#research .research-video-hero h2 {
+  color: white;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0,0,0,.2);
+}
+
+/* RESEARCH TAGS */
 
 #research .research-tags {
   display: flex;
@@ -148,44 +187,21 @@ body {
   font-weight: 700;
 }
 
-/* ===============================
-   RESEARCH INTRODUCTION VIDEO
-================================ */
-
-#research .research-intro-video {
-  margin: 40px auto 0;
-  width: 100%;
-  max-width: 950px;
-}
-
-#research .research-intro-video video {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 550px;
-  object-fit: contain;
-  border-radius: 18px;
-  background: #102a43;
-  box-shadow: 0 12px 30px rgba(16,42,67,0.10);
-}
-
-/* ===============================
-   RESEARCH SECTIONS
-================================ */
+/* RESEARCH SECTIONS */
 
 #research .research-block {
   margin-top: 75px;
 }
 
 #research .research-section-intro {
-  color: var(--research-muted);
+  color: var(--muted);
   max-width: 800px;
   margin-bottom: 25px;
 }
 
 #research .research-card {
   background: white;
-  border: 1px solid var(--research-line);
+  border: 1px solid var(--line);
   border-radius: 19px;
   padding: 26px;
   box-shadow: 0 7px 24px rgba(16,42,67,.04);
@@ -203,15 +219,13 @@ body {
 }
 
 #research figcaption {
-  color: var(--research-muted);
+  color: var(--muted);
   font-size: 13px;
   line-height: 1.65;
   margin-top: 13px;
 }
 
-/* ===============================
-   STUDY AREA
-================================ */
+/* STUDY AREA */
 
 #research .research-study-grid {
   display: grid;
@@ -226,7 +240,7 @@ body {
 
 #research .research-highlight {
   background: #e4f3ef;
-  border-left: 4px solid var(--research-teal);
+  border-left: 4px solid var(--teal);
   padding: 18px 20px;
   border-radius: 0 12px 12px 0;
   font-weight: 600;
@@ -234,9 +248,7 @@ body {
   margin-top: 22px;
 }
 
-/* ===============================
-   RESEARCH FOCUS CARDS
-================================ */
+/* RESEARCH FOCUS */
 
 #research .research-focus-grid {
   display: grid;
@@ -247,10 +259,10 @@ body {
 
 #research .research-focus-card {
   background: white;
-  border: 1px solid var(--research-line);
+  border: 1px solid var(--line);
   border-radius: 16px;
   padding: 25px;
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .2s, box-shadow .2s;
 }
 
 #research .research-focus-card:hover {
@@ -262,7 +274,7 @@ body {
   width: 49px;
   height: 49px;
   background: #e1f1ed;
-  color: var(--research-teal);
+  color: var(--teal);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,14 +288,12 @@ body {
 }
 
 #research .research-focus-card p {
-  color: var(--research-muted);
+  color: var(--muted);
   font-size: 14px;
   margin-bottom: 0;
 }
 
-/* ===============================
-   INTERACTIVE MAP TABS
-================================ */
+/* INTERACTIVE MAPS */
 
 #research .research-tab-buttons {
   display: flex;
@@ -295,7 +305,7 @@ body {
 #research .research-tab-button {
   border: 1px solid #cbdede;
   background: white;
-  color: var(--research-navy);
+  color: var(--navy);
   border-radius: 10px;
   padding: 12px 20px;
   font-size: 14px;
@@ -306,13 +316,13 @@ body {
 }
 
 #research .research-tab-button:hover {
-  border-color: var(--research-teal);
+  border-color: var(--teal);
 }
 
 #research .research-tab-button.active {
-  background: var(--research-teal);
+  background: var(--teal);
   color: white;
-  border-color: var(--research-teal);
+  border-color: var(--teal);
 }
 
 #research .research-tab-panel {
@@ -335,13 +345,11 @@ body {
 
 #research .research-map-description {
   margin-top: 18px;
-  color: var(--research-muted);
+  color: var(--muted);
   font-size: 15px;
 }
 
-/* ===============================
-   FIELDWORK PHOTOGRAPHS
-================================ */
+/* FIELDWORK */
 
 #research .research-photo-grid {
   display: grid;
@@ -352,7 +360,7 @@ body {
 
 #research .research-photo-card {
   background: white;
-  border: 1px solid var(--research-line);
+  border: 1px solid var(--line);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -363,7 +371,7 @@ body {
   object-fit: cover;
   display: block;
   cursor: zoom-in;
-  transition: transform .3s ease;
+  transition: transform .3s;
 }
 
 #research .research-photo-card:hover img {
@@ -382,13 +390,11 @@ body {
 #research .research-photo-caption p {
   font-size: 13px;
   line-height: 1.6;
-  color: var(--research-muted);
+  color: var(--muted);
   margin: 0;
 }
 
-/* ===============================
-   METHODS AND RESEARCH TEAM
-================================ */
+/* METHODS AND TEAM */
 
 #research .research-bottom-grid {
   display: grid;
@@ -405,7 +411,7 @@ body {
 
 #research .research-team li {
   padding: 11px 0;
-  border-bottom: 1px solid var(--research-line);
+  border-bottom: 1px solid var(--line);
   font-size: 15px;
 }
 
@@ -414,10 +420,9 @@ body {
 }
 
 #research .research-team a {
-  color: #087f8c;
+  color: var(--teal);
   font-weight: 700;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 #research .research-team a:hover {
@@ -425,7 +430,6 @@ body {
   text-decoration: underline;
 }
 
-   
 #research .research-methods {
   display: flex;
   flex-wrap: wrap;
@@ -441,9 +445,7 @@ body {
   font-weight: 600;
 }
 
-/* ===============================
-   IMAGE LIGHTBOX
-================================ */
+/* IMAGE LIGHTBOX */
 
 #research .research-lightbox {
   position: fixed;
@@ -481,12 +483,9 @@ body {
   cursor: zoom-in;
 }
 
-/* ===============================
-   RESPONSIVE DESIGN
-================================ */
+/* RESPONSIVE */
 
 @media (max-width: 950px) {
-
   #research .research-study-grid,
   #research .research-bottom-grid {
     grid-template-columns: 1fr;
@@ -502,13 +501,29 @@ body {
 }
 
 @media (max-width: 600px) {
-
   #research {
-    padding: 65px 0;
+    padding: 35px 0 65px;
   }
 
   #research .research-container {
     width: 91%;
+  }
+
+  #research .research-video-hero {
+    min-height: 410px;
+    border-radius: 16px;
+  }
+
+  #research .research-video-hero::before {
+    background: rgba(5,21,34,.67);
+  }
+
+  #research .research-video-hero-content {
+    padding: 30px 22px;
+  }
+
+  #research .research-video-hero h2 {
+    font-size: clamp(28px, 7vw, 38px);
   }
 
   #research .research-block {
@@ -539,35 +554,61 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  #research .research-hero-video {
+    display: none;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- ===============================
-     BACK TO PORTFOLIO
-================================ -->
+<!-- BACK TO PORTFOLIO -->
 
 <div class="research-topbar">
   <a href="index.html">← Back to Portfolio</a>
 </div>
 
-<!-- ===============================
-     CURRENT RESEARCH
-================================ -->
-
 <section id="research">
-
 <div class="research-container">
 
-  <div class="research-eyebrow">
-    Current Research
+  <!-- VIDEO HERO -->
+
+  <div class="research-video-hero">
+
+    <video
+      class="research-hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <source
+        src="Portfolio/landscape_video.mp4"
+        type="video/mp4"
+      >
+    </video>
+
+    <div class="research-video-hero-content">
+
+      <div class="research-eyebrow">
+        Current Research
+      </div>
+
+      <h2>
+        Four Decades of Landscape Change in Ghana's
+        Forest–Savanna Transition Zone
+      </h2>
+
+    </div>
   </div>
 
-  <h2>
-    Four Decades of Landscape Change in Ghana's
-    Forest–Savanna Transition Zone
-  </h2>
+  <!-- INTRODUCTION -->
 
   <p class="research-subtitle">
     MSc Geography Research · University of British Columbia · 2025–2027
@@ -590,39 +631,14 @@ body {
     for conservation and landscape management.
   </p>
 
- 
-<div class="research-tags">
-  <span class="research-tag">1986–2025</span>
-  <span class="research-tag">Kogyae Strict Nature Reserve</span>
-  <span class="research-tag">Remote Sensing</span>
-  <span class="research-tag">Vegetation Dynamics</span>
-</div>
+  <div class="research-tags">
+    <span class="research-tag">1986–2025</span>
+    <span class="research-tag">Kogyae Strict Nature Reserve</span>
+    <span class="research-tag">Remote Sensing</span>
+    <span class="research-tag">Vegetation Dynamics</span>
+  </div>
 
-
-<!-- RESEARCH INTRODUCTION VIDEO -->
-
-<div class="research-intro-video">
-
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    controls
-    preload="metadata"
-  >
-    <source
-      src="Portfolio/landscape_video.mp4"
-      type="video/mp4"
-    >
-    Your browser does not support HTML5 video.
-  </video>
-
-</div>
-
-  <!-- ===============================
-       01 STUDY AREA
-  ================================ -->
+  <!-- 01 STUDY AREA -->
 
   <div class="research-block">
 
@@ -635,7 +651,6 @@ body {
     <div class="research-study-grid">
 
       <figure class="research-card research-figure">
-
         <img
           class="research-image research-zoomable"
           src="Portfolio/KOGYAE_MAP.jpg"
@@ -647,7 +662,6 @@ body {
           Location of Kogyae Strict Nature Reserve
           within Ghana's ecological zones.
         </figcaption>
-
       </figure>
 
       <div class="research-study-text">
@@ -675,15 +689,10 @@ body {
         </div>
 
       </div>
-
     </div>
-
   </div>
 
-
-  <!-- ===============================
-       02 RESEARCH FOCUS
-  ================================ -->
+  <!-- 02 RESEARCH FOCUS -->
 
   <div class="research-block">
 
@@ -703,23 +712,20 @@ body {
     <div class="research-focus-grid">
 
       <article class="research-focus-card">
-
         <div class="research-focus-icon">
           <i data-lucide="map"></i>
         </div>
 
-        <h4>Land-Use & Land-Cover Change</h4>
+        <h4>Land-Use &amp; Land-Cover Change</h4>
 
         <p>
           Mapping historical changes in forests,
           savannas, woodlands, and human-modified
           landscapes from 1986 to 2025.
         </p>
-
       </article>
 
       <article class="research-focus-card">
-
         <div class="research-focus-icon">
           <i data-lucide="trees"></i>
         </div>
@@ -732,16 +738,14 @@ body {
           satellite imagery, UAV observations,
           and field measurements.
         </p>
-
       </article>
 
       <article class="research-focus-card">
-
         <div class="research-focus-icon">
           <i data-lucide="leaf"></i>
         </div>
 
-        <h4>Landscape & Ecological Dynamics</h4>
+        <h4>Landscape &amp; Ecological Dynamics</h4>
 
         <p>
           Identifying visible and hidden transitions
@@ -749,17 +753,12 @@ body {
           and divergence across forest and savanna
           ecosystems.
         </p>
-
       </article>
 
     </div>
-
   </div>
 
-
-  <!-- ===============================
-       03 RESEARCH MAPS
-  ================================ -->
+  <!-- 03 RESEARCH MAPS -->
 
   <div class="research-block">
 
@@ -776,9 +775,11 @@ body {
       corresponding research outputs.
     </p>
 
-    <div class="research-tab-buttons"
-         role="tablist"
-         aria-label="Research map categories">
+    <div
+      class="research-tab-buttons"
+      role="tablist"
+      aria-label="Research map categories"
+    >
 
       <button
         class="research-tab-button active"
@@ -787,7 +788,8 @@ body {
         aria-selected="true"
         aria-controls="research-land-panel"
         id="research-land-tab"
-        data-research-tab="land">
+        data-research-tab="land"
+      >
         Land Cover
       </button>
 
@@ -798,7 +800,8 @@ body {
         aria-selected="false"
         aria-controls="research-tree-panel"
         id="research-tree-tab"
-        data-research-tab="tree">
+        data-research-tab="tree"
+      >
         Tree Cover
       </button>
 
@@ -809,27 +812,27 @@ body {
         aria-selected="false"
         aria-controls="research-change-panel"
         id="research-change-tab"
-        data-research-tab="change">
+        data-research-tab="change"
+      >
         Change Analysis
       </button>
 
     </div>
 
-
-    <!-- LAND COVER MAP -->
+    <!-- LAND COVER -->
 
     <div
       class="research-tab-panel active"
       id="research-land-panel"
       role="tabpanel"
-      aria-labelledby="research-land-tab">
+      aria-labelledby="research-land-tab"
+    >
 
       <div class="research-card">
 
         <h4>Land-Cover Patterns: 1986–2025</h4>
 
         <figure class="research-figure">
-
           <img
             class="research-map-image research-zoomable"
             src="Portfolio/LULC_KOGYAE.png"
@@ -842,7 +845,6 @@ body {
             across the whole study area, showing
             forest, savanna, and human-modified land.
           </figcaption>
-
         </figure>
 
         <p class="research-map-description">
@@ -853,25 +855,23 @@ body {
         </p>
 
       </div>
-
     </div>
 
-
-    <!-- TREE COVER MAP -->
+    <!-- TREE COVER -->
 
     <div
       class="research-tab-panel"
       id="research-tree-panel"
       role="tabpanel"
       aria-labelledby="research-tree-tab"
-      hidden>
+      hidden
+    >
 
       <div class="research-card">
 
         <h4>Tree-Cover Patterns: 1986–2025</h4>
 
         <figure class="research-figure">
-
           <img
             class="research-map-image research-zoomable"
             src="Portfolio/TREECOVER.png"
@@ -883,7 +883,6 @@ body {
             Estimated tree-cover percentage across
             the study area over four observation years.
           </figcaption>
-
         </figure>
 
         <p class="research-map-description">
@@ -894,9 +893,7 @@ body {
         </p>
 
       </div>
-
     </div>
-
 
     <!-- CHANGE ANALYSIS -->
 
@@ -905,14 +902,14 @@ body {
       id="research-change-panel"
       role="tabpanel"
       aria-labelledby="research-change-tab"
-      hidden>
+      hidden
+    >
 
       <div class="research-card">
 
         <h4>Land-Cover Transitions</h4>
 
         <figure class="research-figure">
-
           <img
             class="research-map-image research-zoomable"
             src="Portfolio/CHANGE_MAP.png"
@@ -925,7 +922,6 @@ body {
             and human-modified land-cover classes
             across the study period.
           </figcaption>
-
         </figure>
 
         <p class="research-map-description">
@@ -937,13 +933,11 @@ body {
 
       </div>
 
-
       <div class="research-card" style="margin-top:24px;">
 
         <h4>Tree-Cover Loss and Gain</h4>
 
         <figure class="research-figure">
-
           <img
             class="research-map-image research-zoomable"
             src="Portfolio/CHANGE_TREE.png"
@@ -957,7 +951,6 @@ body {
             different periods, using a
             20-percentage-point change threshold.
           </figcaption>
-
         </figure>
 
         <p class="research-map-description">
@@ -968,15 +961,10 @@ body {
         </p>
 
       </div>
-
     </div>
-
   </div>
 
-
-  <!-- ===============================
-       04 FIELDWORK
-  ================================ -->
+  <!-- 04 FIELDWORK -->
 
   <div class="research-block">
 
@@ -998,10 +986,7 @@ body {
 
     <div class="research-photo-grid">
 
-      <!-- PHOTO 1 -->
-
       <article class="research-photo-card">
-
         <img
           class="research-zoomable"
           src="Portfolio/Field_work_sitting.jpg"
@@ -1010,23 +995,15 @@ body {
         >
 
         <div class="research-photo-caption">
-
           <h4>Vegetation Surveys</h4>
-
           <p>
             Collecting field measurements
             and recording vegetation observations.
           </p>
-
         </div>
-
       </article>
 
-
-      <!-- PHOTO 2 -->
-
       <article class="research-photo-card">
-
         <img
           class="research-zoomable"
           src="Portfolio/Team.jpg"
@@ -1035,23 +1012,15 @@ body {
         >
 
         <div class="research-photo-caption">
-
           <h4>Field Collaboration</h4>
-
           <p>
             Working with local field teams
             during ecological surveys.
           </p>
-
         </div>
-
       </article>
 
-
-      <!-- PHOTO 3 -->
-
       <article class="research-photo-card">
-
         <img
           class="research-zoomable"
           src="Portfolio/Drone_flying.jpg"
@@ -1060,26 +1029,18 @@ body {
         >
 
         <div class="research-photo-caption">
-
           <h4>Drone Operations</h4>
-
           <p>
             Collecting high-resolution observations
             to support vegetation mapping.
           </p>
-
         </div>
-
       </article>
 
     </div>
-
   </div>
 
-
-  <!-- ===============================
-       05 RESEARCH APPROACH
-  ================================ -->
+  <!-- 05 RESEARCH APPROACH -->
 
   <div class="research-block">
 
@@ -1087,13 +1048,13 @@ body {
       05 · Research Approach
     </div>
 
-    <h3>Data, Methods & Research Team</h3>
+    <h3>Data, Methods &amp; Research Team</h3>
 
     <div class="research-bottom-grid">
 
       <div class="research-card">
 
-        <h4>Data & Analytical Methods</h4>
+        <h4>Data &amp; Analytical Methods</h4>
 
         <p>
           My research integrates long-term
@@ -1103,7 +1064,6 @@ body {
         </p>
 
         <div class="research-methods">
-
           <span>Landsat</span>
           <span>UAV Imagery</span>
           <span>GEDI</span>
@@ -1116,11 +1076,9 @@ body {
           <span>Vegetation Indices</span>
           <span>Time-Series Analysis</span>
           <span>GeoAI</span>
-
         </div>
 
       </div>
-
 
       <div class="research-card">
 
@@ -1131,61 +1089,63 @@ body {
           and collaborating researchers.
         </p>
 
-     
-<ul class="research-team">
+        <ul class="research-team">
 
-  <li>
-    Sandra Sawdiatu Inusah — Principal Investigator (PI)
-  </li>
+          <li>
+            Sandra Sawdiatu Inusah — Principal Investigator (PI)
+          </li>
 
-  <li>
-    <a href="https://geog.ubc.ca/profile/naomi-schwartz/"
-       target="_blank"
-       rel="noopener noreferrer">
-      Dr. Naomi Schwartz
-    </a>
-    — Main Supervisor
-  </li>
+          <li>
+            <a
+              href="https://geog.ubc.ca/profile/naomi-schwartz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dr. Naomi Schwartz
+            </a>
+            — Main Supervisor
+          </li>
 
-  <li>
-    <a href="https://forestry.ubc.ca/faculty-profile/nicholas-coops/"
-       target="_blank"
-       rel="noopener noreferrer">
-      Dr. Nicholas Coops
-    </a>
-    — Co-Supervisor
-  </li>
+          <li>
+            <a
+              href="https://forestry.ubc.ca/faculty-profile/nicholas-coops/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dr. Nicholas Coops
+            </a>
+            — Co-Supervisor
+          </li>
 
-  <li>
-    <a href="https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/dbd88d19f390.html"
-       target="_blank"
-       rel="noopener noreferrer">
-      Dr. Mohammed Amani
-    </a>
-    — Co-Supervisor
-  </li>
+          <li>
+            <a
+              href="https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/dbd88d19f390.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dr. Mohammed Amani
+            </a>
+            — Co-Supervisor
+          </li>
 
-  <li>
-    <a href="https://eeb.princeton.edu/people/carla-staver"
-       target="_blank"
-       rel="noopener noreferrer">
-      Dr. Ann Carla Staver
-    </a>
-    — Co-Supervisor
-  </li>
+          <li>
+            <a
+              href="https://eeb.princeton.edu/people/carla-staver"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dr. Ann Carla Staver
+            </a>
+            — Co-Supervisor
+          </li>
 
-</ul>
+        </ul>
 
       </div>
-
     </div>
-
   </div>
 
-
-  <!-- ===============================
-       IMAGE LIGHTBOX
-  ================================ -->
+  <!-- IMAGE LIGHTBOX -->
 
   <div
     class="research-lightbox"
@@ -1193,12 +1153,14 @@ body {
     role="dialog"
     aria-modal="true"
     aria-label="Enlarged research image"
-    aria-hidden="true">
+    aria-hidden="true"
+  >
 
     <button
       type="button"
       class="research-lightbox-close"
-      aria-label="Close enlarged image">
+      aria-label="Close enlarged image"
+    >
       &times;
     </button>
 
@@ -1211,25 +1173,47 @@ body {
   </div>
 
 </div>
-
 </section>
 
-
-<!-- ===============================
-     JAVASCRIPT
-================================ -->
+<!-- JAVASCRIPT -->
 
 <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
 
 <script>
-
 (function () {
 
   const research = document.getElementById("research");
 
   if (!research) return;
 
-  /* MAP TABS */
+  /* VIDEO AUTOPLAY */
+
+  const heroVideo = research.querySelector(
+    ".research-hero-video"
+  );
+
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+
+    const motionPreference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+
+    if (!motionPreference.matches) {
+      heroVideo.play().catch(function () {
+        // Keep the fallback background if autoplay fails.
+      });
+    } else {
+      heroVideo.pause();
+    }
+
+    heroVideo.addEventListener("error", function () {
+      console.warn("Research video could not be loaded.");
+    });
+  }
+
+  /* INTERACTIVE MAP TABS */
 
   const tabButtons = research.querySelectorAll(
     ".research-tab-button"
@@ -1265,7 +1249,6 @@ body {
           panel.id === "research-" + selected + "-panel";
 
         panel.classList.toggle("active", active);
-
         panel.hidden = !active;
 
       });
@@ -1273,7 +1256,6 @@ body {
     });
 
   });
-
 
   /* IMAGE LIGHTBOX */
 
@@ -1308,7 +1290,6 @@ body {
     document.body.style.overflow = "hidden";
 
     closeButton.focus();
-
   }
 
   function closeLightbox() {
@@ -1320,14 +1301,13 @@ body {
       "true"
     );
 
-    lightboxImage.src = "";
+    lightboxImage.removeAttribute("src");
 
     document.body.style.overflow = "";
 
-    if (previousFocus) {
+    if (previousFocus && previousFocus.focus) {
       previousFocus.focus();
     }
-
   }
 
   research.querySelectorAll(
@@ -1376,15 +1356,13 @@ body {
 
   });
 
-
-  /* LUCIDE ICONS */
+  /* ICONS */
 
   if (typeof lucide !== "undefined") {
     lucide.createIcons();
   }
 
 })();
-
 </script>
 
 </body>
