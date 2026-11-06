@@ -1,627 +1,560 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="MSc research by Sandra Sawdiatu Inusah on landscape and vegetation change in Ghana.">
-<title>Current Research | Sandra Sawdiatu Inusah</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+<title>Current Research | Sandra Sawdiatu Inusah</title>
 
 <style>
 :root {
-  --navy:#102a43;
-  --teal:#087f8c;
-  --ink:#243b4a;
-  --muted:#5d7280;
-  --line:#dce7e8;
-  --mist:#f4f8f8;
+  --navy: #102a43;
+  --teal: #008b91;
+  --text: #263d4b;
+  --light: #f4f8f8;
+  --border: #dce6e5;
 }
-* {box-sizing:border-box}
-html {scroll-behavior:smooth}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin:0;
-  font-family:'DM Sans',Arial,sans-serif;
-  color:var(--ink);
-  line-height:1.75;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.8;
 }
-img {max-width:100%;display:block}
-a {color:var(--teal)}
-.container {width:min(1160px,90%);margin:auto}
 
-.header {
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:10;
-  box-shadow:0 1px 12px #102a4314;
+.container {
+  width: min(1150px, 90%);
+  margin: auto;
 }
-.nav {
-  min-height:75px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+
+header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-.brand {
-  color:var(--navy);
-  font-weight:800;
-  text-decoration:none;
+
+nav {
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
-.nav-links {display:flex;flex-wrap:wrap;gap:18px}
-.nav-links a {
-  font-size:.9rem;
-  font-weight:700;
-  text-decoration:none;
+
+nav a {
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 700;
 }
-.intro {
-  background:linear-gradient(110deg,#102a43,#124c56);
-  padding:90px 0;
-  color:white;
+
+nav a:hover {
+  color: var(--teal);
 }
-.intro h1 {
-  color:white;
-  font-size:clamp(2.3rem,5vw,4.3rem);
-  line-height:1.18;
-  max-width:950px;
-  margin:15px 0 24px;
+
+.hero {
+  background: linear-gradient(110deg, #102a43, #12525b);
+  color: white;
+  padding: 90px 0;
 }
-.intro p {max-width:830px;font-size:1.12rem}
+
+.hero h1 {
+  color: white;
+  font-size: clamp(32px, 4.5vw, 55px);
+  line-height: 1.2;
+  max-width: 1000px;
+}
+
+.hero p {
+  max-width: 850px;
+  font-size: 19px;
+}
+
 .eyebrow {
-  font-size:.85rem;
-  text-transform:uppercase;
-  letter-spacing:.17em;
-  color:var(--teal);
-  font-weight:800;
-  margin:0 0 12px;
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.intro .eyebrow {color:#9de5da}
-.section {padding:78px 0}
-.alt {background:var(--mist)}
-h2 {
-  color:var(--navy);
-  font-size:clamp(1.9rem,3.5vw,2.8rem);
-  line-height:1.25;
-  margin:0 0 23px;
-}
-h3 {color:var(--navy);line-height:1.3}
-p {margin:0 0 17px}
-.btn {
-  display:inline-flex;
-  gap:9px;
-  align-items:center;
-  padding:12px 20px;
-  background:var(--teal);
-  color:white;
-  border-radius:9px;
-  text-decoration:none;
-  font-weight:700;
-}
-.btn.outline {
-  border:1px solid white;
-  background:transparent;
-}
-.actions {display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.grid2 {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:28px;
-  align-items:start;
-}
-.grid3 {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.card {
-  border:1px solid var(--line);
-  border-radius:18px;
-  background:white;
-  padding:24px;
-  box-shadow:0 8px 25px #102a4309;
-}
-.card h3 {margin:0 0 10px}
-.card p {margin-bottom:0}
-.image-card {
-  border:1px solid var(--line);
-  border-radius:18px;
-  overflow:hidden;
-  background:white;
-  box-shadow:0 8px 24px #102a430a;
-  margin:0;
-}
-.image-card img {width:100%;height:auto}
-.image-card figcaption {
-  padding:13px 18px;
-  color:var(--muted);
-  font-size:.88rem;
-}
-.wide-image {
-  width:100%;
-  height:auto;
-  max-height:680px;
-  object-fit:contain;
-  background:white;
-}
-.stack {display:grid;gap:26px}
-.photo-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-.photo-grid img {
-  width:100%;
-  height:330px;
-  object-fit:cover;
-}
-.pill {
-  display:inline-block;
-  padding:5px 11px;
-  background:#e0f2f0;
-  color:#086a75;
-  border-radius:6px;
-  font-size:.82rem;
-  font-weight:700;
-}
-.metrics {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-  margin-top:25px;
-}
-.metric {
-  background:#e8f4f2;
-  padding:22px;
-  border-radius:14px;
-}
-.metric strong {
-  display:block;
-  color:var(--teal);
-  font-size:1.7rem;
-}
-.footer {
-  background:var(--navy);
-  color:white;
-  padding:35px 0;
-}
-.footer a {color:#a6e5dc}
-.note {font-size:.9rem;color:var(--muted)}
 
-@media(max-width:760px) {
-  .grid2,.grid3,.photo-grid,.metrics {
-    grid-template-columns:1fr;
+.hero .eyebrow {
+  color: #9de5da;
+}
+
+section {
+  padding: 75px 0;
+  scroll-margin-top: 75px;
+}
+
+.light {
+  background: var(--light);
+}
+
+h2 {
+  color: var(--navy);
+  font-size: clamp(27px, 3vw, 40px);
+  line-height: 1.3;
+}
+
+h3 {
+  color: var(--navy);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.figure {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  max-height: 650px;
+  object-fit: contain;
+}
+
+.figure figcaption {
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #617783;
+}
+
+.research-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.research-gallery figure {
+  margin: 0;
+}
+
+.research-gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.research-gallery figcaption {
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--teal);
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 9px;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: #006e75;
+}
+
+.note {
+  color: #617783;
+  font-size: 14px;
+}
+
+footer {
+  background: var(--navy);
+  color: white;
+  padding: 30px 0;
+}
+
+footer a {
+  color: #9de5da;
+}
+
+@media(max-width:800px) {
+  .grid,
+  .grid-three,
+  .research-gallery {
+    grid-template-columns: 1fr;
   }
-  .section {padding:56px 0}
-  .nav-links {gap:10px}
-  .intro {padding:65px 0}
-  .photo-grid img {height:300px}
+
+  section {
+    padding: 55px 0;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header class="header">
-  <nav class="container nav">
-    <a class="brand" href="index.html">Sandra Sawdiatu Inusah</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="#overview">Overview</a>
-      <a href="#maps">Maps & Results</a>
-      <a href="#fieldwork">Fieldwork</a>
-      <a href="#team">Team</a>
-    </div>
+<header>
+  <nav class="container">
+    <a href="index.html">Sandra S. Inusah.</a>
+    <a href="index.html">← Back to Portfolio</a>
   </nav>
 </header>
 
 <main>
 
-<!-- RESEARCH INTRODUCTION -->
-<section class="intro">
+<!-- INTRODUCTION -->
+
+<section class="hero">
   <div class="container">
+
     <p class="eyebrow">
-      MSc Research · University of British Columbia · 2025–2027
+      MSc Geography · University of British Columbia
     </p>
 
     <h1>
-      Four Decades of Landscape Change in Ghana's
-      Forest–Savanna Transition Zone
+      Understanding Four Decades of Landscape Change
+      in Ghana's Forest–Savanna Transition Zone
     </h1>
 
     <p>
-      Exploring how land use, land cover, and vegetation structure
-      have changed in and around Kogyae Strict Nature Reserve
-      from 1986 to 2025 — and what these transformations may
-      mean for ecosystems and conservation.
+      Integrating satellite remote sensing, UAV observations,
+      field measurements, and machine learning to investigate
+      land-cover change and vegetation structural dynamics
+      in and around Kogyae Strict Nature Reserve.
     </p>
 
-    <div class="actions">
-      <a class="btn" href="#overview">
-        Discover the Research
-        <i data-lucide="arrow-down"></i>
-      </a>
+    <a class="button" href="#overview">
+      Explore the Research ↓
+    </a>
 
-      <a class="btn outline" href="index.html">
-        Back to Portfolio
-        <i data-lucide="arrow-left"></i>
-      </a>
-    </div>
   </div>
 </section>
 
-<!-- RESEARCH OVERVIEW -->
-<section class="section" id="overview">
-  <div class="container">
-    <p class="eyebrow">The Research</p>
-    <h2>Why Kogyae? Why Landscape Change?</h2>
+<!-- OVERVIEW -->
 
-    <div class="grid2">
+<section id="overview">
+  <div class="container">
+
+    <p class="eyebrow">RESEARCH OVERVIEW</p>
+    <h2>About the Research</h2>
+
+    <div class="grid">
+
       <div>
         <p>
-          <strong>Kogyae Strict Nature Reserve</strong> is Ghana's
-          only strict nature reserve. Located in the forest–savanna
-          transition zone, it offers an important setting for
-          studying how vegetation and land use respond to
-          human activities and environmental processes.
+          Ghana's forest–savanna transition zone is a dynamic
+          landscape where forests, savannas, agricultural lands,
+          and settlements interact.
         </p>
 
         <p>
-          My research investigates landscape changes over the
-          nearly 40-year period <strong>1986–2025</strong>,
-          both within the reserve and in its surrounding landscape.
+          My MSc research focuses on Kogyae Strict Nature
+          Reserve and its surrounding landscape.
         </p>
 
         <p>
-          Rather than examining land-cover categories alone,
-          I also investigate changes in tree cover and vegetation
-          structure that may occur even when a location remains
-          classified as forest or savanna.
+          I investigate long-term land-use and land-cover
+          change alongside shifts in vegetation structure,
+          particularly tree cover.
         </p>
 
         <p>
-          The broader goal is to better understand how ecological
-          landscapes transform over time and to generate evidence
-          that can inform conservation and land-management decisions.
+          The research explores how combining categorical
+          land-cover maps with continuous measures of
+          vegetation structure can reveal ecological
+          changes that may otherwise be overlooked.
         </p>
       </div>
 
-      <figure class="image-card">
+      <figure class="figure">
         <img src="Portfolio/KOGYAE_MAP.jpg"
-             alt="Study area map showing Ghana ecological zones and Kogyae Strict Nature Reserve">
+             alt="Map of the Kogyae study area">
         <figcaption>
-          Study area: Kogyae Strict Nature Reserve and Ghana's
-          forest–savanna transition zone.
+          Location of Kogyae Strict Nature Reserve
+          within Ghana's ecological zones.
         </figcaption>
       </figure>
+
     </div>
 
-    <div class="metrics">
-      <div class="metric">
-        <strong>1986–2025</strong>
-        Historical analysis period
-      </div>
-      <div class="metric">
-        <strong>91</strong>
-        Vegetation plots surveyed
-      </div>
-      <div class="metric">
-        <strong>3</strong>
-        Interconnected research objectives
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- RESEARCH OBJECTIVES -->
-<section class="section alt" id="objectives">
+<!-- OBJECTIVES -->
+
+<section class="light" id="objectives">
   <div class="container">
-    <p class="eyebrow">Research Focus</p>
-    <h2>Three Questions, One Changing Landscape</h2>
 
-    <div class="grid3">
+    <p class="eyebrow">RESEARCH OBJECTIVES</p>
+    <h2>What Am I Investigating?</h2>
+
+    <div class="grid-three">
+
       <div class="card">
-        <span class="pill">Objective 01</span>
-        <h3>Mapping Land Cover & Tree Cover</h3>
+        <h3>01. Mapping Landscape Change</h3>
         <p>
-          Reconstruct historical land-use and land-cover patterns
-          and estimate vegetation structure using Landsat,
-          UAV imagery, GEDI observations, and field measurements.
+          Map historical land-use and land-cover change
+          and tree cover using Landsat imagery, UAV data,
+          GEDI observations, and field measurements.
         </p>
       </div>
 
       <div class="card">
-        <span class="pill">Objective 02</span>
-        <h3>Identifying Different Types of Change</h3>
+        <h3>02. Identifying Different Types of Change</h3>
         <p>
-          Distinguish visible land-cover transitions,
-          structure-only changes, land-use changes without
-          obvious structural change, and apparent stability
-          across the landscape.
+          Investigate visible land-cover transitions,
+          changes in vegetation structure,
+          shifts in land use, and areas of apparent stability.
         </p>
       </div>
 
       <div class="card">
-        <span class="pill">Objective 03</span>
-        <h3>Understanding Ecosystem Structure</h3>
+        <h3>03. Understanding Structural Dynamics</h3>
         <p>
-          Investigate whether forest and savanna ecosystems
-          are becoming more similar or more distinct
-          in vegetation structure over time.
+          Examine structural homogenization and divergence
+          between forest and savanna ecosystems.
         </p>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- MAPS AND RESULTS -->
-<section class="section" id="maps">
-  <div class="container">
-    <p class="eyebrow">Maps & Visual Evidence</p>
-    <h2>What Has Changed Since 1986?</h2>
-
-    <p>
-      These figures present the spatial patterns and preliminary
-      analyses from the study area. They illustrate both
-      land-cover transitions and changes in tree cover over time.
-    </p>
-
-    <div class="stack">
-      <figure class="image-card">
-        <img class="wide-image"
-             src="Portfolio/LULC_KOGYAE.png"
-             alt="Land cover maps for 1986, 2002, 2015 and 2025">
-        <figcaption>
-          <strong>Land-cover patterns, 1986–2025.</strong>
-          A comparison of forest, savanna, and human-modified
-          areas across four dates.
-        </figcaption>
-      </figure>
-
-      <figure class="image-card">
-        <img class="wide-image"
-             src="Portfolio/TREECOVER.png"
-             alt="Tree cover maps across four dates">
-        <figcaption>
-          <strong>Tree-cover dynamics.</strong>
-          Estimated spatial distribution of tree cover
-          across the study period.
-        </figcaption>
-      </figure>
-
-      <figure class="image-card">
-        <img class="wide-image"
-             src="Portfolio/CHANGE_MAP.png"
-             alt="Land-cover change alluvial diagram">
-        <figcaption>
-          <strong>Land-cover transitions.</strong>
-          The flows illustrate changes among forest,
-          savanna, and human-modified land-cover classes.
-        </figcaption>
-      </figure>
-
-      <figure class="image-card">
-        <img class="wide-image"
-             src="Portfolio/CHANGE_TREE.png"
-             alt="Tree-cover loss, gain, and stability charts">
-        <figcaption>
-          <strong>Tree-cover change inside the reserve.</strong>
-          Areas of stability, loss, and gain,
-          including annualized rates.
-        </figcaption>
-      </figure>
     </div>
 
-    <p class="note" style="margin-top:18px">
-      These figures represent ongoing research.
-      Findings remain subject to final validation
-      and thesis completion.
-    </p>
   </div>
 </section>
 
 <!-- METHODS -->
-<section class="section alt" id="methods">
+
+<section id="methods">
   <div class="container">
-    <p class="eyebrow">How I Study Change</p>
-    <h2>From Satellites to Field Observations</h2>
 
-    <div class="grid3">
+    <p class="eyebrow">METHODOLOGY</p>
+    <h2>Combining Multiple Sources of Evidence</h2>
+
+    <div class="grid">
+
       <div class="card">
-        <i data-lucide="satellite" color="#087f8c"></i>
-        <h3>Satellite Time Series</h3>
+        <h3>Satellite Remote Sensing</h3>
         <p>
-          Landsat imagery and vegetation indices support
-          the analysis of long-term land-cover change
-          and seasonal vegetation dynamics.
+          Landsat imagery, vegetation indices,
+          seasonal phenology, and time-series
+          change detection.
         </p>
       </div>
 
       <div class="card">
-        <i data-lucide="scan" color="#087f8c"></i>
-        <h3>UAV & Vegetation Structure</h3>
+        <h3>UAV & Field Measurements</h3>
         <p>
-          Drone imagery, GEDI observations, and field
-          measurements help characterize tree cover
-          and vegetation structure.
+          Drone imagery, vegetation plots,
+          tree-cover observations, and
+          field-based validation.
         </p>
       </div>
 
       <div class="card">
-        <i data-lucide="brain-circuit" color="#087f8c"></i>
-        <h3>Machine Learning & Change Detection</h3>
+        <h3>Machine Learning</h3>
         <p>
-          Random Forest, LandTrendr, satellite time-series
-          metrics, and geospatial AI methods support
-          mapping and interpretation.
+          Random Forest classification and regression,
+          satellite embeddings, and model evaluation.
         </p>
       </div>
+
+      <div class="card">
+        <h3>Change Detection</h3>
+        <p>
+          LandTrendr, land-cover transition analysis,
+          and changes in continuous tree-cover estimates.
+        </p>
+      </div>
+
     </div>
 
-    <p style="margin-top:25px">
-      <strong>Tools:</strong> Google Earth Engine, Python,
-      R, PyTorch, TerraTorch, ArcGIS Pro, and QGIS.
+  </div>
+</section>
+
+<!-- LAND COVER MAPS -->
+
+<section class="light" id="results">
+  <div class="container">
+
+    <p class="eyebrow">LAND-COVER DYNAMICS</p>
+    <h2>Land-Use and Land-Cover Change</h2>
+
+    <p>
+      Historical land-cover mapping is used to examine
+      changes in forest, savanna, savanna woodland,
+      cropland, and other landscape classes.
     </p>
+
+    <figure class="figure">
+      <img src="Portfolio/LULC_KOGYAE.png"
+           alt="Historical land-use and land-cover maps">
+      <figcaption>
+        Historical land-use and land-cover patterns
+        in the Kogyae landscape.
+      </figcaption>
+    </figure>
+
+    <figure class="figure">
+      <img src="Portfolio/CHANGE_MAP.png"
+           alt="Land-cover change analysis">
+      <figcaption>
+        Land-cover transitions and landscape change analysis.
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- TREE COVER -->
+
+<section>
+  <div class="container">
+
+    <p class="eyebrow">VEGETATION STRUCTURE</p>
+    <h2>Tree-Cover Dynamics</h2>
+
+    <p>
+      Tree-cover estimates provide information about
+      vegetation structure beyond categorical
+      land-cover classifications.
+    </p>
+
+    <figure class="figure">
+      <img src="Portfolio/TREECOVER.png"
+           alt="Tree-cover maps">
+      <figcaption>
+        Spatial patterns of estimated tree cover.
+      </figcaption>
+    </figure>
+
+    <figure class="figure">
+      <img src="Portfolio/CHANGE_TREE.png"
+           alt="Tree-cover change analysis">
+      <figcaption>
+        Analysis of tree-cover gains, losses,
+        and areas of relative stability.
+      </figcaption>
+    </figure>
+
+    <p class="note">
+      Research outputs are preliminary and subject
+      to further validation and interpretation.
+    </p>
+
   </div>
 </section>
 
 <!-- FIELDWORK -->
-<section class="section" id="fieldwork">
+
+<section class="light" id="fieldwork">
   <div class="container">
-    <p class="eyebrow">Behind the Maps</p>
+
+    <p class="eyebrow">FIELD RESEARCH</p>
     <h2>Fieldwork in Ghana</h2>
 
     <p>
-      Field observations help connect remotely sensed patterns
-      with conditions on the ground. The project combines
-      vegetation surveys, UAV data collection, and collaboration
-      with local field teams.
+      Fieldwork provides ground observations to support
+      interpretation and validation of satellite
+      and UAV-derived vegetation information.
     </p>
 
-    <div class="photo-grid">
-      <figure class="image-card">
+    <div class="research-gallery">
+
+      <figure>
         <img src="Portfolio/Field_work_sitting.jpg"
-             alt="Sandra recording vegetation observations during fieldwork">
-        <figcaption>
-          Recording vegetation measurements and observations.
-        </figcaption>
+             alt="Field research observations">
+        <figcaption>Vegetation field observations</figcaption>
       </figure>
 
-      <figure class="image-card">
+      <figure>
         <img src="Portfolio/Drone_flying.jpg"
-             alt="Sandra operating a drone during forest fieldwork">
-        <figcaption>
-          Preparing and operating UAV equipment in the field.
-        </figcaption>
+             alt="Drone operation during fieldwork">
+        <figcaption>UAV data collection</figcaption>
       </figure>
 
-      <figure class="image-card">
+      <figure>
         <img src="Portfolio/Team.jpg"
-             alt="Members of the fieldwork team in Ghana">
-        <figcaption>
-          Working with the field research team.
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="grid2" style="margin-top:24px">
-      <figure class="image-card">
-        <img src="Portfolio/Forest Drone Fieldwork.png"
-             alt="Forest drone fieldwork"
-             onerror="this.closest('figure').style.display='none'">
-        <figcaption>
-          Forest and UAV field activities.
-        </figcaption>
+             alt="Research field team">
+        <figcaption>Research field team</figcaption>
       </figure>
 
-      <div class="card">
-        <h3>Why Fieldwork Matters</h3>
-        <p>
-          Field surveys provide important information for
-          interpreting remotely sensed vegetation patterns,
-          evaluating map accuracy, and understanding the
-          ecological context of observed changes.
-        </p>
-        <p>
-          The study included <strong>91 vegetation plots</strong>
-          surveyed during fieldwork in 2026.
-        </p>
-      </div>
     </div>
+
   </div>
 </section>
 
-<!-- RESEARCH SIGNIFICANCE -->
-<section class="section alt" id="significance">
+<!-- SIGNIFICANCE -->
+
+<section>
   <div class="container">
-    <p class="eyebrow">Why It Matters</p>
-    <h2>Looking Beyond Changes We Can Easily See</h2>
+
+    <p class="eyebrow">RESEARCH SIGNIFICANCE</p>
+    <h2>Why This Research Matters</h2>
 
     <p>
-      Some landscape changes are obvious: a forest becomes
-      cropland, or a savanna is converted to settlement.
-      Others are less visible.
+      Landscape transformations are not always visible
+      through changes in broad land-cover categories.
+      Vegetation structure may change even when an
+      area remains classified as forest or savanna.
     </p>
 
     <p>
-      Tree cover may increase or decrease even when a
-      location remains in the same broad land-cover category.
+      By integrating land-cover mapping with tree-cover
+      estimates, this research aims to provide a more
+      comprehensive understanding of landscape change.
     </p>
 
     <p>
-      By examining both land cover and vegetation structure,
-      this research aims to provide a fuller picture of how
-      forest–savanna ecosystems are changing, with implications
-      for biodiversity conservation, ecosystem monitoring,
-      and land management.
+      The findings may contribute to ecological
+      monitoring, biodiversity conservation,
+      and sustainable landscape management.
     </p>
-  </div>
-</section>
 
-<!-- RESEARCH TEAM -->
-<section class="section" id="team">
-  <div class="container">
-    <p class="eyebrow">Research Team</p>
-    <h2>Supervision & Collaboration</h2>
+    <a class="button" href="index.html">
+      ← Return to My Portfolio
+    </a>
 
-    <div class="grid2">
-      <div class="card">
-        <h3>Supervisory & Committee Team</h3>
-        <p>
-          Dr. Naomi Schwartz<br>
-          Dr. Nicholas Coops<br>
-          Dr. Mohammed Amani<br>
-          Dr. Carla Stiva
-        </p>
-        <p class="note">
-          Confirm the spelling and official titles
-          of committee members before publishing.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Researcher</h3>
-        <p>
-          <strong>Sandra Sawdiatu Inusah</strong><br>
-          MSc Geography<br>
-          University of British Columbia
-        </p>
-
-        <p>
-          <a href="mailto:ssinusah@student.ubc.ca">
-            ssinusah@student.ubc.ca
-          </a>
-        </p>
-
-        <a class="btn" href="index.html">
-          Return to Portfolio
-          <i data-lucide="arrow-left"></i>
-        </a>
-      </div>
-    </div>
   </div>
 </section>
 
 </main>
 
-<footer class="footer">
+<footer>
   <div class="container">
-    © <span id="year"></span> Sandra Sawdiatu Inusah ·
-    <a href="index.html">Back to Portfolio</a>
+    © 2026 Sandra Sawdiatu Inusah ·
+    University of British Columbia
   </div>
 </footer>
-
-<script>
-document.getElementById('year').textContent =
-  new Date().getFullYear();
-
-window.addEventListener('load', () => {
-  if (window.lucide) lucide.createIcons();
-});
-</script>
 
 </body>
 </html>
