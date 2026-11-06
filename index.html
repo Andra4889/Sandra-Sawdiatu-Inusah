@@ -4,140 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sandra Sawdiatu Inusah | Geospatial Researcher</title>
-  <meta name="description" content="Sandra Sawdiatu Inusah, graduate geospatial researcher at UBC working on remote sensing, geospatial AI, and land-use change.">
+  <meta name="description" content="Sandra Sawdiatu Inusah, geospatial analyst and remote sensing researcher at UBC.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f7f5ef;
+      --navy: #102A43;
+      --slate: #243B53;
+      --teal: #087F8C;
+      --teal-dark: #066670;
+      --sage: #DCEBE7;
+      --bg: #F7FAF9;
       --surface: #ffffff;
-      --text: #1f2a24;
-      --muted: #5c6b62;
-      --accent: #2f6b4f;
-      --accent-soft: #e3eee7;
-      --earth: #b5763a;
-      --line: #e2ded3;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #121714;
-        --surface: #1a211d;
-        --text: #e8ece9;
-        --muted: #a3b0a8;
-        --accent: #7cc3a0;
-        --accent-soft: #22312a;
-        --earth: #d9a06a;
-        --line: #2c3631;
-      }
+      --text: #102A43;
+      --muted: #52667a;
+      --line: #e1e8e6;
+      --on-navy: #ffffff;
+      --on-navy-muted: #bcccdc;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: "Inter", system-ui, sans-serif;
-      line-height: 1.65;
-      font-size: 17px;
-    }
-    a { color: var(--accent); text-decoration: none; }
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    body { background: var(--bg); color: var(--text); font-family: "Inter", system-ui, sans-serif; line-height: 1.65; font-size: 17px; }
+    a { color: var(--teal); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
 
     /* Nav */
-    nav {
-      position: sticky; top: 0; z-index: 10;
-      background: color-mix(in srgb, var(--bg) 90%, transparent);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-    nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 58px; }
-    nav .brand { font-family: "Fraunces", serif; font-weight: 600; color: var(--text); font-size: 1.05rem; }
-    nav ul { list-style: none; display: flex; gap: 22px; }
-    nav ul a { color: var(--muted); font-size: 0.92rem; font-weight: 500; }
-    nav ul a:hover { color: var(--accent); text-decoration: none; }
-    @media (max-width: 720px) { nav ul { display: none; } }
+    nav { background: var(--navy); position: sticky; top: 0; z-index: 10; }
+    nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+    nav .brand { color: var(--on-navy); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; font-size: 1.05rem; }
+    nav .brand:hover { text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 24px; }
+    nav ul a { color: var(--on-navy-muted); font-size: 0.92rem; font-weight: 500; }
+    nav ul a:hover { color: var(--on-navy); text-decoration: none; }
+    @media (max-width: 800px) { nav ul { display: none; } }
 
     /* Hero */
-    header.hero { padding: 88px 0 64px; }
-    .eyebrow {
-      display: inline-block; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--earth); margin-bottom: 18px;
-    }
-    h1 {
-      font-family: "Fraunces", serif; font-weight: 600;
-      font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; margin-bottom: 20px;
-    }
-    .tagline { font-size: 1.2rem; color: var(--muted); max-width: 640px; margin-bottom: 30px; }
+    header.hero { background: var(--navy); color: var(--on-navy); padding: 48px 0 76px; }
+    .hero-grid { display: flex; align-items: center; gap: 48px; }
+    .hero-text { flex: 1; }
+    .eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 16px; }
+    header.hero .eyebrow { color: var(--on-navy-muted); }
+    h1 { font-weight: 700; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin-bottom: 18px; letter-spacing: -0.01em; }
+    .tagline { font-size: 1.15rem; color: var(--on-navy-muted); max-width: 620px; margin-bottom: 12px; }
+    .focus { font-size: 0.95rem; color: var(--sage); margin-bottom: 30px; }
     .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn {
-      display: inline-block; padding: 11px 20px; border-radius: 8px; font-weight: 500; font-size: 0.95rem;
-      border: 1px solid var(--accent); color: var(--accent);
+    .btn { display: inline-block; padding: 12px 22px; border-radius: 8px; font-weight: 500; font-size: 1rem; border: 1px solid var(--teal); color: var(--teal); }
+    .btn:hover { text-decoration: none; opacity: 0.9; }
+    .btn.primary { background: var(--teal); color: #fff; }
+    header.hero .btn:not(.primary), .contact .btn:not(.primary) { border-color: var(--on-navy-muted); color: var(--on-navy); }
+    .photo { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 4px solid var(--teal); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+    @media (max-width: 800px) {
+      .hero-grid { flex-direction: column-reverse; align-items: flex-start; gap: 28px; }
+      .photo { width: 150px; height: 150px; }
     }
-    .btn.primary { background: var(--accent); color: var(--bg); }
-    .btn:hover { text-decoration: none; opacity: 0.88; }
+
+    /* Stats */
+    .stats { margin-top: -40px; position: relative; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--surface); border-radius: 16px; box-shadow: 0 8px 28px rgba(16,42,67,0.1); overflow: hidden; }
+    .stat { padding: 24px 22px; }
+    .stat + .stat { border-left: 1px solid var(--line); }
+    .stat .num { font-size: 2rem; font-weight: 700; color: var(--teal); line-height: 1.1; }
+    .stat .what { font-weight: 600; margin-top: 6px; }
+    .stat .note { font-size: 0.85rem; color: var(--muted); }
+    @media (max-width: 800px) {
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .stat:nth-child(3) { border-left: none; }
+      .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
+    }
 
     /* Sections */
-    section { padding: 56px 0; border-top: 1px solid var(--line); }
-    h2 {
-      font-family: "Fraunces", serif; font-weight: 600; font-size: 1.8rem; margin-bottom: 28px;
-    }
-    h3 { font-size: 1.08rem; font-weight: 600; }
+    section { padding: 68px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    section.stats + section { border-top: none; }
+    h2 { font-weight: 600; font-size: 1.85rem; margin-bottom: 10px; color: var(--navy); }
+    .intro { color: var(--muted); margin-bottom: 30px; max-width: 680px; }
+    h3 { font-size: 1.1rem; font-weight: 600; color: var(--navy); }
     p + p { margin-top: 14px; }
     .muted { color: var(--muted); }
 
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
-    .tag {
-      background: var(--accent-soft); color: var(--accent); padding: 5px 12px;
-      border-radius: 999px; font-size: 0.85rem; font-weight: 500;
-    }
+    .tag { background: var(--sage); color: var(--teal-dark); padding: 5px 12px; border-radius: 999px; font-size: 0.85rem; font-weight: 500; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px; }
 
-    .card {
-      background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 26px;
-    }
-    .feature h3 { font-family: "Fraunces", serif; font-size: 1.3rem; line-height: 1.35; margin-bottom: 12px; }
-    .feature ul { margin: 16px 0 0 20px; }
-    .feature li { margin-bottom: 8px; }
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+    .project { background: var(--surface); border-radius: 16px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s; }
+    .project:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(16,42,67,0.1); }
+    .project .img { aspect-ratio: 16 / 9; background: linear-gradient(135deg, var(--teal), var(--slate)); position: relative; }
+    .project .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .project .num { position: absolute; top: 14px; left: 14px; background: var(--navy); color: #fff; font-size: 0.8rem; font-weight: 600; padding: 4px 10px; border-radius: 6px; }
+    .project .body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+    .project h3 { font-size: 1.15rem; line-height: 1.35; margin-bottom: 8px; }
+    .project p { font-size: 0.95rem; color: var(--muted); flex: 1; }
+    .project .stack { margin-top: 14px; font-size: 0.85rem; color: var(--teal); font-weight: 500; }
+
+    .thesis .eyebrow { color: var(--teal); }
+    .thesis h3 { font-size: 1.2rem; line-height: 1.4; margin-bottom: 12px; }
+    .thesis ul { margin: 16px 0 0 20px; }
+    .thesis li { margin-bottom: 8px; }
 
     /* Timeline */
-    .item { display: grid; grid-template-columns: 170px 1fr; gap: 24px; padding: 18px 0; }
+    .item { display: grid; grid-template-columns: 180px 1fr; gap: 24px; padding: 18px 0; }
     .item + .item { border-top: 1px dashed var(--line); }
     .when { color: var(--muted); font-size: 0.9rem; font-weight: 500; padding-top: 2px; }
     .org { color: var(--muted); font-size: 0.95rem; margin-bottom: 6px; }
     .item ul { margin-left: 20px; margin-top: 6px; }
     .item li { margin-bottom: 5px; }
-    @media (max-width: 640px) {
-      .item { grid-template-columns: 1fr; gap: 4px; }
-    }
+    @media (max-width: 640px) { .item { grid-template-columns: 1fr; gap: 4px; } }
 
     /* Publications */
     .pubs { list-style: none; counter-reset: pub; }
-    .pubs li { counter-increment: pub; position: relative; padding-left: 36px; margin-bottom: 18px; }
-    .pubs li::before {
-      content: counter(pub); position: absolute; left: 0; top: 1px;
-      width: 24px; height: 24px; border-radius: 50%; background: var(--accent-soft); color: var(--accent);
-      font-size: 0.78rem; font-weight: 600; display: flex; align-items: center; justify-content: center;
-    }
+    .pubs li { counter-increment: pub; position: relative; padding-left: 38px; margin-bottom: 18px; }
+    .pubs li::before { content: counter(pub); position: absolute; left: 0; top: 1px; width: 26px; height: 26px; border-radius: 50%; background: var(--sage); color: var(--teal-dark); font-size: 0.78rem; font-weight: 600; display: flex; align-items: center; justify-content: center; }
     .me { font-weight: 600; }
-    .pub-group { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--earth); font-weight: 600; margin: 8px 0 16px; }
-
-    .highlight {
-      border-left: 4px solid var(--earth); background: var(--surface);
-      padding: 20px 24px; border-radius: 0 12px 12px 0; margin-bottom: 28px;
-    }
+    .pub-group { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); font-weight: 600; margin: 8px 0 16px; }
+    .highlight { border-left: 4px solid var(--teal); background: var(--surface); padding: 20px 24px; border-radius: 0 16px 16px 0; margin-bottom: 32px; }
+    .highlight .eyebrow { color: var(--teal); margin-bottom: 8px; }
 
     /* Skills */
-    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
     .skills .card { padding: 22px; }
-    .skills h3 { margin-bottom: 8px; color: var(--accent); }
+    .skills h3 { margin-bottom: 8px; color: var(--teal); }
     .skills p { font-size: 0.95rem; color: var(--muted); }
 
     /* Contact */
-    .contact { text-align: center; }
-    .contact p { max-width: 560px; margin: 0 auto 26px; color: var(--muted); }
+    section.contact { background: var(--navy); color: var(--on-navy); text-align: center; border-top: none; }
+    .contact h2 { color: var(--on-navy); }
+    .contact p { max-width: 560px; margin: 0 auto 26px; color: var(--on-navy-muted); }
     .contact .buttons { justify-content: center; }
-
-    footer { padding: 32px 0; text-align: center; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); }
+    footer { background: var(--slate); padding: 24px 0; text-align: center; font-size: 0.85rem; color: var(--on-navy-muted); }
   </style>
 </head>
 <body>
@@ -146,6 +143,7 @@
     <div class="wrap">
       <a class="brand" href="#top">Sandra S. Inusah</a>
       <ul>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -157,22 +155,81 @@
   </nav>
 
   <header class="hero" id="top">
-    <div class="wrap">
-      <span class="eyebrow">Geospatial Researcher · University of British Columbia</span>
-      <h1>Sandra Sawdiatu Inusah</h1>
-      <p class="tagline">I use remote sensing, geospatial AI, and field data to understand how land use and vegetation are changing, and what that means for people and ecosystems.</p>
-      <div class="buttons">
-        <a class="btn primary" href="mailto:inusahsawdiatusandra@gmail.com">Get in touch</a>
-        <a class="btn" href="https://www.linkedin.com/in/sandra-inusah" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://scholar.google.ca/citations?user=WnDXRssAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">Geospatial Analyst &amp; Remote Sensing Researcher</span>
+        <h1>Mapping landscapes. Understanding change.</h1>
+        <p class="tagline">I'm Sandra Sawdiatu Inusah, an MSc researcher at the University of British Columbia understanding environmental change through Earth observation, geospatial AI, and field research.</p>
+        <p class="focus">GIS • Remote Sensing • Machine Learning • Environmental Research</p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
       </div>
+      <img class="photo" src="profile.jpg" alt="Sandra Sawdiatu Inusah" onerror="this.style.display='none'">
     </div>
   </header>
+
+  <section class="stats" style="padding:0">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat"><div class="num">91</div><div class="what">Vegetation plots</div><div class="note">Field surveys in Ghana, 2026</div></div>
+        <div class="stat"><div class="num">4</div><div class="what">Peer-reviewed articles</div><div class="note">Plus 4 reports &amp; datasets</div></div>
+        <div class="stat"><div class="num">1986–2025</div><div class="what">Satellite analysis period</div><div class="note">Long-term landscape monitoring</div></div>
+        <div class="stat"><div class="num">4+</div><div class="what">Years in geospatial work</div><div class="note">Research and applied projects</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Featured Projects</h2>
+      <p class="intro">Selected work spanning land-cover change, tree-cover mapping, climate-smart agriculture, and conservation.</p>
+
+      <div class="projects">
+        <div class="project">
+          <div class="img"><img src="project1.jpg" alt="Land-cover map of Ghana's forest–savanna transition" onerror="this.style.display='none'"><span class="num">01</span></div>
+          <div class="body">
+            <h3>Land-Use and Land-Cover Change in Ghana’s Forest–Savanna Transition</h3>
+            <p>Historical land-cover maps built with a Random Forest classification workflow, accuracy assessment, and transition matrices tracking how forest, savanna, and cropland have shifted over time.</p>
+            <div class="stack">Landsat · Google Earth Engine · Random Forest · LandTrendr</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="img"><img src="project2.jpg" alt="UAV orthomosaic of tree cover" onerror="this.style.display='none'"><span class="num">02</span></div>
+          <div class="body">
+            <h3>Mapping Tree Cover Using UAV and Satellite Imagery</h3>
+            <p>UAV orthomosaics and field plots used to train and validate models that predict continuous tree cover across the study area.</p>
+            <div class="stack">UAV · Landsat · GEDI · Python · Machine Learning</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="img"><img src="project3.jpg" alt="Climate-smart agriculture map of Ghana" onerror="this.style.display='none'"><span class="num">03</span></div>
+          <div class="body">
+            <h3>Climate-Smart Agriculture and Geospatial Decision Support</h3>
+            <p>Work with the Alliance of Bioversity International and CIAT mapping program impact areas, policy support, and climate-smart agriculture initiatives through spatial analysis and dashboards.</p>
+            <div class="stack">GIS · Spatial Analysis · Climate Adaptation · Data Visualization</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="img"><img src="project4.jpg" alt="Ankasa Conservation Area landscape" onerror="this.style.display='none'"><span class="num">04</span></div>
+          <div class="body">
+            <h3>Landscape Change and Conservation in Ankasa</h3>
+            <p>Forest habitat structure, land-use change, and protected-area conservation in the Ankasa and Bia conservation areas, using Landsat imagery and field surveys.</p>
+            <div class="stack">Remote Sensing · Landscape Ecology · Conservation GIS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="about">
     <div class="wrap">
       <h2>About</h2>
-      <p>I am a graduate geospatial researcher with over four years of experience using remote sensing, geospatial technology, machine learning, and environmental data to study land-use and land-cover change, vegetation dynamics, and human–environment interactions.</p>
+      <p style="margin-top:20px">I am a graduate geospatial researcher with over four years of experience using remote sensing, geospatial technology, machine learning, and environmental data to study land-use and land-cover change, vegetation dynamics, and human–environment interactions.</p>
       <p>My work integrates multi-source Earth observation data, including Landsat, UAV imagery, GEDI LiDAR, and field measurements, using Python, R, and Google Earth Engine. I am currently an MSc student in Geography at UBC, supervised by Dr. Naomi Schwartz and Dr. Nicholas Coops.</p>
       <div class="tags">
         <span class="tag">Geospatial AI</span>
@@ -188,7 +245,7 @@
   <section id="research">
     <div class="wrap">
       <h2>Current Research</h2>
-      <div class="card feature">
+      <div class="card thesis" style="margin-top:24px">
         <span class="eyebrow">MSc Thesis · UBC Geography</span>
         <h3>Spatiotemporal Analysis of Vegetation Dynamics in Ghana’s Forest–Savanna Transition Zone Using Multi-Source Remote Sensing and Machine Learning</h3>
         <p class="muted">Mapping long-term land-use transitions and vegetation structural change, including structural homogenization and divergence between forest and savanna systems.</p>
@@ -265,7 +322,7 @@
         </div>
       </div>
 
-      <h2 style="margin-top:48px">Education</h2>
+      <h2 style="margin-top:52px">Education</h2>
 
       <div class="item">
         <div class="when">2025 – 2027 (expected)</div>
@@ -284,7 +341,7 @@
         </div>
       </div>
 
-      <h2 style="margin-top:48px">Teaching &amp; Awards</h2>
+      <h2 style="margin-top:52px">Teaching &amp; Awards</h2>
 
       <div class="item">
         <div class="when">2024 – Present</div>
@@ -316,8 +373,8 @@
     <div class="wrap">
       <h2>Publications &amp; Talks</h2>
 
-      <div class="highlight">
-        <span class="eyebrow" style="margin-bottom:8px">Upcoming talk · December 9, 2026</span>
+      <div class="highlight" style="margin-top:24px">
+        <span class="eyebrow">Upcoming talk · December 9, 2026</span>
         <h3>Spatiotemporal Analysis of Vegetation Dynamics in Ghana’s Forest–Savanna Transition Zone Using Multi-Source Remote Sensing</h3>
         <p class="muted">Oral presentation (GC32A-06), AGU Annual Meeting 2026, San Francisco</p>
       </div>
@@ -344,27 +401,12 @@
   <section id="skills">
     <div class="wrap">
       <h2>Skills</h2>
-      <div class="skills">
-        <div class="card">
-          <h3>Programming</h3>
-          <p>Python, R, JavaScript (Google Earth Engine)</p>
-        </div>
-        <div class="card">
-          <h3>Machine Learning &amp; GeoAI</h3>
-          <p>Random forest classification and regression, PyTorch, TerraTorch, Prithvi embeddings, Google Satellite Embeddings</p>
-        </div>
-        <div class="card">
-          <h3>Earth Observation</h3>
-          <p>Landsat, Sentinel-2, HLS, GEDI LiDAR, UAV imagery; vegetation indices, phenology metrics, LandTrendr</p>
-        </div>
-        <div class="card">
-          <h3>GIS Software</h3>
-          <p>Google Earth Engine, ArcGIS Pro, ArcGIS Online, QGIS, ArcMap, SNAP, Agisoft Metashape, FRAGSTATS</p>
-        </div>
-        <div class="card">
-          <h3>Field Methods</h3>
-          <p>Vegetation plot surveys, canopy-cover measurement, UAV acquisition, GPS/GNSS surveys, ecological sampling</p>
-        </div>
+      <div class="skills" style="margin-top:24px">
+        <div class="card"><h3>Programming</h3><p>Python, R, JavaScript (Google Earth Engine)</p></div>
+        <div class="card"><h3>Machine Learning &amp; GeoAI</h3><p>Random forest classification and regression, PyTorch, TerraTorch, Prithvi embeddings, Google Satellite Embeddings</p></div>
+        <div class="card"><h3>Earth Observation</h3><p>Landsat, Sentinel-2, HLS, GEDI LiDAR, UAV imagery; vegetation indices, phenology metrics, LandTrendr</p></div>
+        <div class="card"><h3>GIS Software</h3><p>Google Earth Engine, ArcGIS Pro, ArcGIS Online, QGIS, ArcMap, SNAP, Agisoft Metashape, FRAGSTATS</p></div>
+        <div class="card"><h3>Field Methods</h3><p>Vegetation plot surveys, canopy-cover measurement, UAV acquisition, GPS/GNSS surveys, ecological sampling</p></div>
       </div>
     </div>
   </section>
@@ -374,10 +416,11 @@
       <h2>Get in Touch</h2>
       <p>I’m always happy to talk about remote sensing, geospatial AI, land-use change, or potential collaborations.</p>
       <div class="buttons">
-        <a class="btn primary" href="mailto:ssinusah@student.ubc.ca">ssinusah@student.ubc.ca</a>
         <a class="btn primary" href="mailto:inusahsawdiatusandra@gmail.com">inusahsawdiatusandra@gmail.com</a>
+        <a class="btn" href="mailto:ssinusah@student.ubc.ca">ssinusah@student.ubc.ca</a>
         <a class="btn" href="https://www.linkedin.com/in/sandra-inusah" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://scholar.google.ca/citations?user=WnDXRssAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="https://github.com/Andra4889" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </section>
