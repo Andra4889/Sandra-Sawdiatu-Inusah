@@ -654,34 +654,40 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 
-/* GALLERY */
+/* LIFE BEYOND RESEARCH */
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
-  margin-top: 30px;
+#gallery .container {
+  max-width: 1150px;
 }
 
-.gallery figure {
-  margin: 0;
-  overflow: hidden;
-  background: var(--cream);
-  border-radius: 12px;
+#gallery p {
+  font-size: 17px;
+  line-height: 1.85;
 }
 
-.gallery img {
+.life-photo {
+  margin-top: 35px;
   width: 100%;
-  height: 270px;
-  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-.gallery figcaption {
-  padding: 12px 15px;
-  font-size: .86rem;
-  font-weight: 600;
+.life-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
 }
 
+.life-caption {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px !important;
+  font-style: italic;
+  color: #617783;
+}
+  
 /* CONTACT */
 
 .contact {
@@ -1457,7 +1463,7 @@ footer a { color: #8ce0d8; }
       </div>
 
       <div class="job">
-        <span class="date">2024–Present</span>
+        <span class="date">2025–Present</span>
         <h3>Graduate Teaching Assistant</h3>
         <h4>University of British Columbia · Vancouver, Canada</h4>
 
@@ -1582,7 +1588,7 @@ footer a { color: #8ce0d8; }
       </div>
 
       <div class="job">
-        <span class="date">Additional Field and Geospatial Experience</span>
+        <span class="date">2023</span>
         <h3>National Land-Cover Map Validation</h3>
         <h4>Ghana Forestry Commission · Ghana</h4>
 
@@ -1609,7 +1615,7 @@ footer a { color: #8ce0d8; }
       </div>
 
       <div class="job">
-        <span class="date">Community Field Research</span>
+        <span class="2022">Community Field Research</span>
         <h3>Nature-Based Solutions Research Support</h3>
         <h4>Ghana</h4>
 
@@ -1698,7 +1704,7 @@ footer a { color: #8ce0d8; }
     <!-- UBC -->
 
     <div class="feature">
-      <span class="date">2024–Present</span>
+      <span class="date">2025–Present</span>
       <h3>Graduate Teaching Assistant</h3>
 
       <p>
@@ -2013,7 +2019,7 @@ footer a { color: #8ce0d8; }
         <h3>Earth Observation</h3>
         <p>
           Landsat, Sentinel-2, HLS, GEDI LiDAR,
-          UAV imagery, NDVI, EVI, NDMI, NBR,
+          UAV imagery,
           LandTrendr, and seasonal phenology.
         </p>
       </div>
@@ -2049,50 +2055,48 @@ footer a { color: #8ce0d8; }
   </div>
 </section>
 
-<!-- GALLERY -->
+
+<!-- LIFE BEYOND RESEARCH -->
 
 <section id="gallery" class="light">
   <div class="container">
-    <p class="eyebrow">BEYOND THE DATA</p>
-    <h2>Fieldwork, Research &amp; Life</h2>
+
+    <p class="eyebrow">BEYOND RESEARCH</p>
+
+    <h2>Life Beyond the Maps</h2>
 
     <p>
-      My research and professional journey has taken me
-      from forest and savanna ecosystems to field surveys,
-      community engagements, and geospatial research environments.
+      There's more to me than maps, satellite imagery, and research!
+      Outside academia, I enjoy creating content, capturing moments,
+      exploring new places, and trying new experiences.
+      I love finding creative ways to express myself, whether through
+      photography, storytelling, or sharing little pieces of my life.
     </p>
 
-    <div class="gallery">
-      <figure>
-        <img
-          src="Portfolio/IMG_2793_Original.jpg"
-          alt="Portfolio fieldwork photograph"
-          loading="lazy">
-        <figcaption>Fieldwork and research</figcaption>
-      </figure>
+    <p>
+      I also enjoy spending time with friends, making memories,
+      discovering new interests, and embracing opportunities
+      to have fun. For me, life is about balancing the things
+      I'm passionate about professionally with the experiences
+      that bring me joy, creativity, and personal growth.
+    </p>
 
-      <figure>
-        <img
-          src="Portfolio/IMG_3551_Original.jpg"
-          alt="Portfolio research photograph"
-          loading="lazy">
-        <figcaption>
-          Research and professional experiences
-        </figcaption>
-      </figure>
+    <!-- ONE WIDE PICTURE -->
 
-      <figure>
-        <img
-          src="Portfolio/Smiling Portrait Among Greenery.png"
-          alt="Sandra Inusah outdoors"
-          loading="lazy">
-        <figcaption>
-          My journey in geospatial research
-        </figcaption>
-      </figure>
+    <div class="life-photo">
+      <img
+        src="Portfolio/life_outside_research.jpg"
+        alt="Moments from my life outside research"
+        loading="lazy">
     </div>
+
+    <p class="life-caption">
+      Creating memories, exploring life, and enjoying the little moments.
+    </p>
+
   </div>
 </section>
+
 
 <!-- CONTACT -->
 
